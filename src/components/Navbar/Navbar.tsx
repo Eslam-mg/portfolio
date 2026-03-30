@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import Image from "next/image";
 import React from 'react';
+import { usePathname } from 'next/navigation';
 
 const navLinks = [
     { href: "/", label: "home" },
@@ -11,6 +12,7 @@ const navLinks = [
 ];
 
 export default function Navbar() {
+    const pathname = usePathname();
     return (
         <header className='border-b border-white/10 font-mono"'>
             <nav className="max-w-300 h-16 mx-auto px-6 flex items-center justify-between">
@@ -26,7 +28,7 @@ export default function Navbar() {
                         <li key={link.href}>
                             <Link
                                 href={link.href}
-                                className={`text-sm transition-colors flex items-center gap-0.5`}
+                                className={`text-sm transition-colors flex items-center gap-0.5 ${pathname === link.href ? "text-white" : "text-gray-text"}`}
                             >
                                 <span className="text-primary">#</span>
                                 {link.label}
