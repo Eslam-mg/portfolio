@@ -3,6 +3,13 @@ import Link from 'next/link';
 import Image from "next/image";
 import React from 'react';
 
+const navLinks = [
+    { href: "/", label: "home" },
+    { href: "/projects", label: "works" },
+    { href: "/about-me", label: "about-me" },
+    { href: "/contacts", label: "contacts" },
+];
+
 export default function Navbar() {
     return (
         <header className='border-b border-white/10 font-mono"'>
@@ -13,8 +20,19 @@ export default function Navbar() {
                     <span className="text-white font-semibold text-base">Eslam</span>
                 </Link>
 
-                <ul>
-
+                {/* Desktop nav */}
+                <ul className="hidden sm:flex list-none gap-8 m-0 p-0">
+                    {navLinks.map((link) => (
+                        <li key={link.href}>
+                            <Link
+                                href={link.href}
+                                className={`text-sm transition-colors flex items-center gap-0.5`}
+                            >
+                                <span className="text-primary">#</span>
+                                {link.label}
+                            </Link>
+                        </li>
+                    ))}
                 </ul>
             </nav>
         </header>
