@@ -28,9 +28,9 @@ export default function Navbar() {
                         <li key={link.href}>
                             <Link
                                 href={link.href}
-                                className={`text-sm transition-colors flex items-center gap-0.5 ${pathname === link.href ? "text-white" : "text-gray-text"}`}
+                                className={`text-sm transition-colors flex items-center gap-0.5 ${pathname === link.href ? "text-white" : "text-textPrimaryColor"}`}
                             >
-                                <span className="text-primary">#</span>
+                                <span className="text-primaryColor">#</span>
                                 {link.label}
                             </Link>
                         </li>
