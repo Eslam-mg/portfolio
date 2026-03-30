@@ -1,7 +1,7 @@
 "use client";
 import Link from 'next/link';
+import Image from "next/image";
 import React from 'react';
-import { LogoIcon } from '../UI/Icon/Icon';
 
 export default function Navbar() {
     return (
@@ -9,7 +9,7 @@ export default function Navbar() {
             <nav>
                 {/* Logo */}
                 <Link href="/">
-                    <LogoIcon className='w-11 h-11 flex'/>
+                    <Image src="/personal-logo.webp" alt="Logo" width={32} height={32} loading='lazy' />
                     <span className=''>
                         Eslam
                     </span>
