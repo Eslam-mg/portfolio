@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from "next/image";
 import React from 'react';
 import { usePathname } from 'next/navigation';
+import LanguageButton from './LanguageButton';
 
 const navLinks = [
     { href: "/", label: "home" },
@@ -36,6 +37,10 @@ export default function Navbar() {
                         </li>
                     ))}
                 </ul>
+                
+                <div className="">
+                    <LanguageButton />
+                </div>
             </nav>
         </header>
     )
