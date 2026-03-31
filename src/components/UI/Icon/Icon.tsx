@@ -20,3 +20,9 @@ export const LogoIcon: React.FC<IconProps> = ({ className }) => (
         </svg>
     </div>
 );
+
+export const AngleDownIcon: React.FC<IconProps> = ({ className, width = 22, height = 22 }) => (
+    <svg className={className} aria-hidden="true" width={width} height={height} fill="none" viewBox="0 0 24 24">
+        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="m19 9-7 7-7-7" />
+    </svg>
+);
