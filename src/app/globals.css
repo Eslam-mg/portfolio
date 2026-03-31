@@ -10,3 +10,8 @@
 
     --font-mono: "Fira Code", monospace;
 }
+
+.custom-duration {
+    transition: all ease-in-out;
+    transition-duration: 300ms;
+}
