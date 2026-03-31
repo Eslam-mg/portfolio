@@ -7,7 +7,7 @@ export default function LanguageButton() {
 
     return (
         <div className="relative">
-            <button onClick={() => setIsOpen(!isOpen)} type='button' aria-label='Button to change language' className='flex items-center justify-around border border-gray-300 rounded w-14 h-8 cursor-pointer'>
+            <button onClick={() => setIsOpen(!isOpen)} type='button' aria-label='Button to change language' className='flex items-center justify-around border border-borderColor rounded w-14 h-8 cursor-pointer'>
                 EN
                 <AngleDownIcon width={16} height={16} className='mt-0.5' />
             </button>
