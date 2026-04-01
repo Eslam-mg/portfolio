@@ -39,12 +39,12 @@ export default function Navbar() {
                         </li>
                     ))}
                 </ul>
-                
+
                 <div className=" flex items-center justify-center gap-4">
                     <LanguageButton />
-                    <button type='button' onClick={()=>setIsOpen(!isOpen)} aria-label='Button to open mobile menu' className="flex flex-col items-end justify-center gap-1.5 sm:hidden cursor-pointer">
-                        <span className="bg-textPrimaryColor h-0.5 w-6"/>
-                        <span className="bg-textPrimaryColor h-0.5 w-4"/>
+                    <button type='button' onClick={() => setIsOpen(!isOpen)} aria-label='Button to open mobile menu' className="flex flex-col items-end justify-center gap-1.5 sm:hidden cursor-pointer">
+                        <span className={`bg-textPrimaryColor h-0.5 w-6 ${isOpen ? "translate-y-1 translate-x-0 -rotate-45" : ""} custom-duration`} />
+                        <span className={`bg-textPrimaryColor h-0.5 ${isOpen ? "-translate-y-1 translate-x-0 rotate-45 w-6" : "w-4"} custom-duration`} />
                     </button>
                 </div>
             </nav>
