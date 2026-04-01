@@ -40,6 +40,10 @@ export default function Navbar() {
                 
                 <div className="">
                     <LanguageButton />
+                    <button type='button' aria-label='Button to open mobile menu' className="flex flex-col items-end justify-center gap-1.5 sm:hidden cursor-pointer">
+                        <span className="bg-textPrimaryColor h-0.5 w-6"/>
+                        <span className="bg-textPrimaryColor h-0.5 w-4"/>
+                    </button>
                 </div>
             </nav>
         </header>
