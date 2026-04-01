@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useState } from 'react';
+import React, { useCallback, useRef, useState } from 'react';
 import { AngleDownIcon } from '../UI/Icon/Icon';
 
 export default function LanguageButton() {
@@ -8,6 +8,11 @@ export default function LanguageButton() {
 
     // Ref for the button/icon that toggles the dropdown
     const toggleRef = useRef(null);
+
+    // Prevents unnecessary re-renders when passed to the custom hook
+    const closeLanguageDropdown = useCallback(() => {
+        setIsOpen(false);
+    }, []);
 
     return (
         <div className="relative" ref={toggleRef}>
