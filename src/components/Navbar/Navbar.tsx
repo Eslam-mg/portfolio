@@ -38,7 +38,7 @@ export default function Navbar() {
                     ))}
                 </ul>
                 
-                <div className="">
+                <div className=" flex items-center justify-center gap-4">
                     <LanguageButton />
                     <button type='button' aria-label='Button to open mobile menu' className="flex flex-col items-end justify-center gap-1.5 sm:hidden cursor-pointer">
                         <span className="bg-textPrimaryColor h-0.5 w-6"/>
