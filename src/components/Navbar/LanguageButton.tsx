@@ -1,13 +1,16 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { AngleDownIcon } from '../UI/Icon/Icon';
 
 export default function LanguageButton() {
     const [isOpen, setIsOpen] = useState(false);
     const [language, setLanguage] = useState("EN");
 
+    // Ref for the button/icon that toggles the dropdown
+    const toggleRef = useRef(null);
+
     return (
-        <div className="relative">
+        <div className="relative" ref={toggleRef}>
             <button onClick={() => setIsOpen(!isOpen)} type='button' aria-label='Button to change language' className='flex items-center justify-around border border-borderColor rounded w-14 h-8 cursor-pointer'>
                 {language}
                 <AngleDownIcon width={16} height={16} className='mt-0.5' />
