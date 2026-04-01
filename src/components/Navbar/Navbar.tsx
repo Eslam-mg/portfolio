@@ -1,7 +1,7 @@
 "use client";
 import Link from 'next/link';
 import Image from "next/image";
-import React from 'react';
+import React, { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import LanguageButton from './LanguageButton';
 
@@ -14,6 +14,8 @@ const navLinks = [
 
 export default function Navbar() {
     const pathname = usePathname();
+    // Controls the visibility of the mobile/navigation menu
+    const [isOpen, setIsOpen] = useState(false);
     return (
         <header className='border-b border-white/10 font-mono"'>
             <nav className="max-w-300 h-16 mx-auto px-6 flex items-center justify-between">
@@ -40,7 +42,7 @@ export default function Navbar() {
                 
                 <div className=" flex items-center justify-center gap-4">
                     <LanguageButton />
-                    <button type='button' aria-label='Button to open mobile menu' className="flex flex-col items-end justify-center gap-1.5 sm:hidden cursor-pointer">
+                    <button type='button' onClick={()=>setIsOpen(!isOpen)} aria-label='Button to open mobile menu' className="flex flex-col items-end justify-center gap-1.5 sm:hidden cursor-pointer">
                         <span className="bg-textPrimaryColor h-0.5 w-6"/>
                         <span className="bg-textPrimaryColor h-0.5 w-4"/>
                     </button>
