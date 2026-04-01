@@ -1,5 +1,6 @@
 "use client";
 import React, { useCallback, useRef, useState } from 'react';
+import useOutsideClick from '@/src/hook/useOutsideClick';
 import { AngleDownIcon } from '../UI/Icon/Icon';
 
 export default function LanguageButton() {
@@ -13,6 +14,9 @@ export default function LanguageButton() {
     const closeLanguageDropdown = useCallback(() => {
         setIsOpen(false);
     }, []);
+
+    // Custom hook to Close when clicking outside
+    useOutsideClick(toggleRef, isOpen, closeLanguageDropdown);
 
     return (
         <div className="relative" ref={toggleRef}>
