@@ -45,7 +45,7 @@ export default function page() {
                             <ellipse cx="60" cy="130" rx="50" ry="40" fill="#abb2bf22" />
                         </svg>
                     </div>
-                    
+
                     {/* Bottom-right dots */}
                     <Image
                         src="/Dots.svg"
@@ -55,6 +55,18 @@ export default function page() {
                         aria-hidden
                         className="absolute -bottom-15 -right-5 opacity-40 pointer-events-none"
                     />
+                </div>
+            </section>
+
+            {/* Quote section */}
+            <section className=' border-red-500 flex items-center justify-center'>
+                <div className="relative border border-borderColor p-4 max-w-60">
+                    <p className="text-white text-xs m-0 leading-relaxed italic">
+                        &ldquo;With great power comes great electricity bill&rdquo;
+                    </p>
+                    <div className="absolute top-full right-0 border border-t-0 border-borderColor p-2">
+                        <span className='text-white'>- Dr. Who</span>
+                    </div>
                 </div>
             </section>
         </div>
