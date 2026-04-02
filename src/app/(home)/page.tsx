@@ -7,7 +7,7 @@ export default function page() {
             {/* ── HERO ── */}
             <section className=" px-6 pt-20 pb-24 grid grid-cols-1 md:grid-cols-2 items-center gap-16 relative">
                 {/* Text side */}
-                <div className="relative z-10">
+                <div className="relative z-10 border">
                     <h1 className="text-white text-4xl font-semibold leading-snug m-0 mb-4">
                         Eslam is a{" "}
                         <span className="text-primaryColor">web designer</span>{" "}
@@ -30,6 +30,19 @@ export default function page() {
                         >
                             See my works →
                         </Link>
+                    </div>
+                </div>
+
+                {/* Profile image side */}
+                <div className="relative flex justify-end">
+                    {/* Geometric outline offset box */}
+                    <div className="absolute -bottom-4 -right-2 w-65 h-80 border-2 border-primary z-0" />
+                    {/* Profile box */}
+                    <div className="w-65 h-80 bg-bg-card relative z-10 flex items-center justify-center overflow-hidden">
+                        <svg width="120" height="160" viewBox="0 0 120 160" fill="none">
+                            <circle cx="60" cy="45" r="30" fill="#abb2bf22" />
+                            <ellipse cx="60" cy="130" rx="50" ry="40" fill="#abb2bf22" />
+                        </svg>
                     </div>
                 </div>
             </section>
