@@ -68,6 +68,16 @@ export default function page() {
                         <span className='text-white'>- Dr. Who</span>
                     </div>
                 </div>
+                
+                {/* right Rectangle 24 */}
+                <Image
+                    src="/Rectangle 24.svg"
+                    alt=""
+                    width={84}
+                    height={84}
+                    aria-hidden
+                    className="absolute -bottom-15 -right-5 opacity-40 pointer-events-none"
+                />
             </section>
         </div>
     )
