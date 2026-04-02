@@ -18,15 +18,15 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <header className='border-b border-white/10 font-mono"'>
-            <nav className="max-w-300 h-16 mx-auto px-6 flex items-center justify-between">
+            <nav className="max-w-300 h-16 mx-auto px-6 flex items-center justify-between relative">
                 {/* Logo */}
                 <Link href="/" className='flex items-center justify-center gap-2'>
                     <Image src="/personal-logo.webp" alt="Logo" width={32} height={32} loading='lazy' />
                     <span className="text-white font-semibold text-base">Eslam</span>
                 </Link>
 
-                {/* Desktop nav */}
-                <ul className="hidden sm:flex list-none gap-8 m-0 p-0">
+                {/* responsive nav */}
+                <ul className={`flex flex-col sm:flex-row gap-8 m-0 p-0 absolute sm:static top-full ${isOpen ? "h-96" : "h-0"} sm:h-fit overflow-hidden custom-duration`}>
                     {navLinks.map((link) => (
                         <li key={link.href}>
                             <Link
