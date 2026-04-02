@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from "next/image";
 
 export default function page() {
     return (
@@ -44,6 +45,16 @@ export default function page() {
                             <ellipse cx="60" cy="130" rx="50" ry="40" fill="#abb2bf22" />
                         </svg>
                     </div>
+                    
+                    {/* Bottom-right dots */}
+                    <Image
+                        src="/Dots.svg"
+                        alt=""
+                        width={84}
+                        height={84}
+                        aria-hidden
+                        className="absolute -bottom-15 -right-5 opacity-40 pointer-events-none"
+                    />
                 </div>
             </section>
         </div>
