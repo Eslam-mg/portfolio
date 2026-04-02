@@ -59,7 +59,7 @@ export default function page() {
             </section>
 
             {/* Quote section */}
-            <section className=' border-red-500 flex items-center justify-center'>
+            <section className='relative border-red-500 flex items-center justify-center'>
                 <div className="relative border border-borderColor p-4 max-w-60">
                     <p className="text-white text-xs m-0 leading-relaxed italic">
                         &ldquo;With great power comes great electricity bill&rdquo;
@@ -73,10 +73,10 @@ export default function page() {
                 <Image
                     src="/Rectangle 24.svg"
                     alt=""
-                    width={84}
-                    height={84}
+                    width={91}
+                    height={91}
                     aria-hidden
-                    className="absolute -bottom-15 -right-5 opacity-40 pointer-events-none"
+                    className="absolute top-1/2 -translate-y-1/2 -right-7 opacity-40 pointer-events-none"
                 />
             </section>
         </div>
