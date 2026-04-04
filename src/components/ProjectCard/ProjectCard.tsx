@@ -30,6 +30,14 @@ export default function ProjectCard({
                     ))}
                 </div>
             </div>
+
+            {/* Content */}
+            <div className="p-5 flex flex-col flex-1">
+                <h3 className="text-white m-0 mb-2 text-base font-semibold">{title}</h3>
+                <p className="text-gray-text m-0 mb-4 text-[13px] leading-relaxed flex-1">
+                    {description}
+                </p>
+            </div>
         </div>
     )
 };
