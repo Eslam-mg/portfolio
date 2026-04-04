@@ -7,7 +7,13 @@ interface ProjectCardProps {
     githubUrl?: string;
 };
 
-export default function ProjectCard() {
+export default function ProjectCard({
+    title,
+    description,
+    technologies,
+    liveUrl = "#",
+    githubUrl = "#",
+}: ProjectCardProps) {
     return (
         <div>ProjectCard</div>
     )
