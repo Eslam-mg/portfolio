@@ -15,6 +15,8 @@ export default function ProjectCard({
     githubUrl = "#",
 }: ProjectCardProps) {
     return (
-        <div>ProjectCard</div>
+        <div className="border border-borderColor flex flex-col transition-colors hover:border-white/40">
+
+        </div>
     )
 };
