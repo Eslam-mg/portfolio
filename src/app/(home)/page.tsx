@@ -8,7 +8,7 @@ export default function page() {
             {/* ── HERO ── */}
             <section className=" px-6 pt-20 pb-24 grid grid-cols-1 md:grid-cols-2 items-center gap-16 relative">
                 {/* Text side */}
-                <div className="relative z-10 border">
+                <div className="relative z-10">
                     <h1 className="text-white text-4xl font-semibold leading-snug m-0 mb-4">
                         Eslam is a{" "}
                         <span className="text-primaryColor">web designer</span>{" "}
@@ -60,7 +60,7 @@ export default function page() {
 
             {/* Quote section */}
             <section className='relative border-red-500 flex items-center justify-center'>
-                <div className="relative border border-borderColor p-4 max-w-60">
+                <div className="relative border border-borderColor p-4 max-w-96">
                     <p className="text-white text-xs m-0 leading-relaxed italic">
                         &ldquo;With great power comes great electricity bill&rdquo;
                     </p>
