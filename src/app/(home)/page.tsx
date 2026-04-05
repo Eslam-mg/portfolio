@@ -69,6 +69,7 @@ export default function page() {
                     <div className="absolute top-full -right-px border border-t-0 border-borderColor p-2">
                         <span className='text-white'>- Dr. Who</span>
                     </div>
+                    <OpeningQuoteIcon className='bg-backgroundColor absolute bottom-0 translate-y-1/2 right-2 z-10 rotate-180 text-borderColor'/>
                 </div>
                 
                 {/* right Rectangle 24 */}
