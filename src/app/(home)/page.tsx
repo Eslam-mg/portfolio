@@ -5,7 +5,7 @@ import { OpeningQuoteIcon } from '@/src/components/UI/Icon/Icon';
 
 export default function page() {
     return (
-        <div className="font-mono text-gray-text px-6">
+        <div className="font-mono text-gray-text px-6 overflow-hidden">
             {/* ── HERO ── */}
             <section className="px-6 pt-20 pb-24 grid grid-cols-1 md:grid-cols-2 items-center gap-16 relative">
                 {/* Text side */}
