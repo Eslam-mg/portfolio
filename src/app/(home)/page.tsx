@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from "next/image";
+import { OpeningQuoteIcon } from '@/src/components/UI/Icon/Icon';
 
 export default function page() {
     return (
@@ -61,6 +62,7 @@ export default function page() {
             {/* Quote section */}
             <section className='relative border-red-500 flex items-center justify-center'>
                 <div className="relative border border-borderColor p-4 max-w-96">
+                    <OpeningQuoteIcon className='bg-backgroundColor absolute top-0 -translate-y-1/2 left-2 z-10 text-borderColor'/>
                     <p className="text-white text-xs m-0 leading-relaxed italic">
                         &ldquo;With great power comes great electricity bill&rdquo;
                     </p>
