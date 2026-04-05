@@ -37,6 +37,28 @@ export default function ProjectCard({
                 <p className="text-gray-text m-0 mb-4 text-[13px] leading-relaxed flex-1">
                     {description}
                 </p>
+
+                {/* Buttons */}
+                <div className="flex gap-3">
+                    <a
+                        href={liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="border border-gray-text/60 text-gray-text text-[13px] px-3.5 py-1.5 transition-colors hover:border-white hover:text-white flex items-center gap-1.5"
+                    >
+                        Live <span className="text-primary text-xs">&lt;~&gt;</span>
+                    </a>
+                    {githubUrl && (
+                        <a
+                            href={githubUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="border border-white/20 text-gray-text text-[13px] px-3.5 py-1.5 transition-colors hover:border-white/50 hover:text-white"
+                        >
+                            GitHub
+                        </a>
+                    )}
+                </div>
             </div>
         </div>
     )
