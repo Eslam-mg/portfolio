@@ -62,16 +62,16 @@ export default function page() {
             {/* Quote section */}
             <section className='relative border-red-500 flex items-center justify-center'>
                 <div className="relative border border-borderColor p-4 max-w-96">
-                    <OpeningQuoteIcon className='flex items-center justify-center w-6 h-6 bg-backgroundColor absolute top-0 -translate-y-1/2 left-2 z-10 text-borderColor'/>
+                    <OpeningQuoteIcon className='flex items-center justify-center w-6 h-6 bg-backgroundColor absolute top-0 -translate-y-1/2 left-2 z-10 text-borderColor' />
                     <p className="text-white text-xs m-0 leading-relaxed italic">
                         &ldquo;With great power comes great electricity bill&rdquo;
                     </p>
                     <div className="absolute top-full -right-px border border-t-0 border-borderColor p-2">
                         <span className='text-white'>- Dr. Who</span>
                     </div>
-                    <OpeningQuoteIcon className='flex items-center justify-center w-6 h-6 bg-backgroundColor absolute bottom-0 translate-y-1/2 right-2 z-10 rotate-180 text-borderColor'/>
+                    <OpeningQuoteIcon className='flex items-center justify-center w-6 h-6 bg-backgroundColor absolute bottom-0 translate-y-1/2 right-2 z-10 rotate-180 text-borderColor' />
                 </div>
-                
+
                 {/* right Rectangle 24 */}
                 <Image
                     src="/Rectangle 24.svg"
@@ -81,6 +81,11 @@ export default function page() {
                     aria-hidden
                     className="absolute top-1/2 -translate-y-1/2 -right-7 opacity-40 pointer-events-none"
                 />
+            </section>
+
+            {/* ── PROJECTS PREVIEW ── */}
+            <section className="mt-32">
+
             </section>
         </div>
     )
