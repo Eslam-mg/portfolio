@@ -86,7 +86,7 @@ export default function page() {
 
             {/* ── PROJECTS PREVIEW ── */}
             <section className="mt-32">
-                <SectionHeader title="projects" className="mb-0" showLine={true} />
+                <SectionHeader title="projects" className="mb-0" showLine={true} lineWidth="w-96" />
             </section>
         </div>
     )
