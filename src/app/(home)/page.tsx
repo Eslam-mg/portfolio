@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from "next/image";
 import { OpeningQuoteIcon } from '@/src/components/UI/Icon/Icon';
+import SectionHeader from '@/src/components/SectionHeader/SectionHeader';
 
 export default function page() {
     return (
@@ -85,7 +86,7 @@ export default function page() {
 
             {/* ── PROJECTS PREVIEW ── */}
             <section className="mt-32">
-
+                <SectionHeader />
             </section>
         </div>
     )
