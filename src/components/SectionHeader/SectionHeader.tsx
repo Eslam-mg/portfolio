@@ -5,7 +5,11 @@ interface SectionHeaderProps {
     className?: string;
 };
 
-export default function SectionHeader() {
+export default function SectionHeader({
+    title,
+    subtitle,
+    className = "",
+}: SectionHeaderProps) {
     return (
         <div>SectionHeader</div>
     )
