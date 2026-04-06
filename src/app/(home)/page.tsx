@@ -86,7 +86,7 @@ export default function page() {
 
             {/* ── PROJECTS PREVIEW ── */}
             <section className="mt-32">
-                <SectionHeader />
+                <SectionHeader title="projects" className="mb-0" showLine={true} />
             </section>
         </div>
     )
