@@ -13,6 +13,15 @@ export default function SectionHeader({
     showLine = false,
 }: SectionHeaderProps) {
     return (
-        <div>SectionHeader</div>
+        <div className={`mb-10 ${className}`}>
+            <h2 className="text-white text-2xl font-semibold m-0 flex items-center font-mono">
+                <span className="text-primary">#</span>
+                {title}
+                <span className="inline-block ml-3 h-0.5 w-20 bg-primary self-center" />
+            </h2>
+            {subtitle && (
+                <p className="text-gray-text m-0 mt-2 text-sm">{subtitle}</p>
+            )}
+        </div>
     )
 };
