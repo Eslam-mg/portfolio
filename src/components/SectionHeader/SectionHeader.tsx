@@ -15,7 +15,7 @@ export default function SectionHeader({
     lineWidth = "",
 }: SectionHeaderProps) {
     return (
-        <div className={`mb-10 ${className}`}>
+        <div className={className}>
             <h2 className="text-white text-2xl font-semibold m-0 flex items-center font-mono">
                 <span className="text-primaryColor">#</span>
                 {title}
