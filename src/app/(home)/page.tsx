@@ -86,7 +86,10 @@ export default function page() {
 
             {/* ── PROJECTS PREVIEW ── */}
             <section className="mt-32">
-                <SectionHeader title="projects" className="mb-0" showLine={true} lineWidth="w-96" />
+                <div className="flex items-center justify-between border">
+                    <SectionHeader title="projects" className="mb-0" showLine={true} lineWidth="w-96" />
+                    <Link href="/" className='text-textPrimaryColor'>View all ~~&gt;</Link>
+                </div>
             </section>
         </div>
     )
