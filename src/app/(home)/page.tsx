@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from "next/image";
 import { OpeningQuoteIcon } from '@/src/components/UI/Icon/Icon';
 import SectionHeader from '@/src/components/SectionHeader/SectionHeader';
+import ProjectCard from '@/src/components/ProjectCard/ProjectCard';
 const featuredProjects = [
     {
         title: "FakeStore App",
@@ -114,6 +115,11 @@ export default function page() {
                 <div className="flex items-center justify-between">
                     <SectionHeader title="projects" className="mb-0" showLine={true} lineWidth="w-96" />
                     <Link href="/" className='text-textPrimaryColor'>View all ~~&gt;</Link>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+                    {featuredProjects.map((project) => (
+                        <ProjectCard key={project.title} {...project} />
+                    ))}
                 </div>
             </section>
         </div>
