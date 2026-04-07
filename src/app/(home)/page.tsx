@@ -3,7 +3,32 @@ import Link from 'next/link';
 import Image from "next/image";
 import { OpeningQuoteIcon } from '@/src/components/UI/Icon/Icon';
 import SectionHeader from '@/src/components/SectionHeader/SectionHeader';
-
+const featuredProjects = [
+    {
+        title: "FakeStore App",
+        description:
+            "A full-featured e-commerce front-end with cart, authentication, and product filtering. Built with Next.js and Tailwind CSS.",
+        technologies: ["Next.js", "TypeScript", "Tailwind"],
+        liveUrl: "#",
+        githubUrl: "#",
+    },
+    {
+        title: "Portfolio V1",
+        description:
+            "Personal portfolio site built with React showcasing projects and skills. Fully responsive and animated.",
+        technologies: ["React", "CSS"],
+        liveUrl: "#",
+        githubUrl: "#",
+    },
+    {
+        title: "Weather Dashboard",
+        description:
+            "Real-time weather app using OpenWeather API with animated weather icons and geolocation support.",
+        technologies: ["JavaScript", "API"],
+        liveUrl: "#",
+        githubUrl: "#",
+    },
+];
 export default function page() {
     return (
         <div className="font-mono text-gray-text px-6 overflow-hidden">
