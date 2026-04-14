@@ -34,7 +34,7 @@ export default function ProjectCard({
             {/* Content */}
             <div className="p-5 flex flex-col flex-1">
                 <h3 className="text-white m-0 mb-2 text-base font-semibold">{title}</h3>
-                <p className="text-gray-text m-0 mb-4 text-[13px] leading-relaxed flex-1">
+                <p className="text-textPrimaryColor m-0 mb-4 text-[13px] leading-relaxed flex-1">
                     {description}
                 </p>
 
@@ -44,7 +44,7 @@ export default function ProjectCard({
                         href={liveUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="border border-gray-text/60 text-gray-text text-[13px] px-3.5 py-1.5 transition-colors hover:border-white hover:text-white flex items-center gap-1.5"
+                        className="border border-primaryColor text-white text-xs px-3.5 py-1.5 transition-colors hover:bg-primaryColor/20 hover:text-white flex items-center gap-1.5"
                     >
                         Live <span className="text-primary text-xs">&lt;~&gt;</span>
                     </a>
