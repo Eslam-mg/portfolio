@@ -46,7 +46,7 @@ export default function ProjectCard({
                         rel="noopener noreferrer"
                         className="border border-primaryColor text-white text-xs px-3.5 py-1.5 transition-colors hover:bg-primaryColor/20 flex items-center gap-1.5"
                     >
-                        Live <span className="text-primary text-xs">&lt;~&gt;</span>
+                        GitHub <span className="text-primary text-xs">&lt;~&gt;</span>
                     </a>
                     {githubUrl && (
                         <a
@@ -55,7 +55,7 @@ export default function ProjectCard({
                             rel="noopener noreferrer"
                             className="border border-borderColor text-textPrimaryColor text-xs px-3.5 py-1.5 transition-colors hover:bg-borderColor/20"
                         >
-                            GitHub
+                            Demo
                         </a>
                     )}
                 </div>
