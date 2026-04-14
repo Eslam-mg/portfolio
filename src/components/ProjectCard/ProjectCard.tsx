@@ -56,6 +56,9 @@ export default function ProjectCard({
                             className="flex items-center gap-1.5 border border-borderColor text-textPrimaryColor text-xs px-3.5 py-1.5 transition-colors hover:bg-borderColor/20"
                         >
                             Demo
+                            <span className='flex items-center justify-center text-xs'>
+                                <svg width={12} height={12} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="rotate-90" aria-hidden="true"><path d="M13.73 4a2 2 0 0 0-3.46 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" /></svg>
+                            </span>
                         </a>
                     )}
                 </div>
