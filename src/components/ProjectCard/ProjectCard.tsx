@@ -44,7 +44,7 @@ export default function ProjectCard({
                         href={liveUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="border border-primaryColor text-white text-xs px-3.5 py-1.5 transition-colors hover:bg-primaryColor/20 hover:text-white flex items-center gap-1.5"
+                        className="border border-primaryColor text-white text-xs px-3.5 py-1.5 transition-colors hover:bg-primaryColor/20 flex items-center gap-1.5"
                     >
                         Live <span className="text-primary text-xs">&lt;~&gt;</span>
                     </a>
@@ -53,7 +53,7 @@ export default function ProjectCard({
                             href={githubUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="border border-white/20 text-gray-text text-[13px] px-3.5 py-1.5 transition-colors hover:border-white/50 hover:text-white"
+                            className="border border-borderColor text-textPrimaryColor text-xs px-3.5 py-1.5 transition-colors hover:bg-borderColor/20"
                         >
                             GitHub
                         </a>
