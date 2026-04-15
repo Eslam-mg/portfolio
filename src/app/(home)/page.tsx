@@ -113,7 +113,7 @@ export default function page() {
             {/* ── PROJECTS PREVIEW ── */}
             <section className="">
                 <div className="flex items-center justify-between">
-                    <SectionHeader title="projects" className="mb-0" showLine={true} lineWidth="w-96" />
+                    <SectionHeader title="projects" className="mb-0" showLine={true} lineWidth="w-0 sm:w-52 md:w-72 lg:w-96" />
                     <Link href="/" className='text-textPrimaryColor'>View all ~~&gt;</Link>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
