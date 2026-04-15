@@ -32,9 +32,9 @@ const featuredProjects = [
 ];
 export default function page() {
     return (
-        <div className="font-mono text-gray-text px-6 overflow-hidden">
+        <div className="font-mono text-gray-text px-6 md:px-12 pt-6 md:pt-12 overflow-hidden space-y-32">
             {/* ── HERO ── */}
-            <section className="px-6 pt-20 pb-24 grid grid-cols-1 md:grid-cols-2 items-center gap-16 relative">
+            <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-16 relative">
                 {/* Text side */}
                 <div className="relative z-10">
                     <h1 className="text-white text-4xl font-semibold leading-snug m-0 mb-4">
@@ -106,12 +106,12 @@ export default function page() {
                     width={91}
                     height={91}
                     aria-hidden
-                    className="absolute top-1/2 -translate-y-1/2 -right-7 opacity-40 pointer-events-none"
+                    className="absolute top-1/2 -translate-y-1/2 -right-14 opacity-40 pointer-events-none"
                 />
             </section>
 
             {/* ── PROJECTS PREVIEW ── */}
-            <section className="mt-32 px-6">
+            <section className="">
                 <div className="flex items-center justify-between">
                     <SectionHeader title="projects" className="mb-0" showLine={true} lineWidth="w-96" />
                     <Link href="/" className='text-textPrimaryColor'>View all ~~&gt;</Link>
