@@ -18,17 +18,18 @@ export default function ProjectCard({
         <div className="border border-borderColor flex flex-col transition-colors hover:border-white/40">
             {/* Image area */}
             <div className="bg-backgroundColor h-44 relative border-b border-borderColor flex items-center justify-center overflow-hidden">
-                {/* Tech tags */}
-                <div className="absolute top-3 left-3 flex gap-2 flex-wrap">
-                    {technologies.map((tech) => (
-                        <span
-                            key={tech}
-                            className="bg-bg text-gray-text text-[11px] px-2 py-0.5 border border-white/10"
-                        >
-                            {tech}
-                        </span>
-                    ))}
-                </div>
+            </div>
+            
+            {/* Tech tags */}
+            <div className="flex gap-3 flex-wrap px-5 py-2 border-b border-borderColor">
+                {technologies.map((tech) => (
+                    <span
+                        key={tech}
+                        className="text-textPrimaryColor text-xs"
+                    >
+                        {tech}
+                    </span>
+                ))}
             </div>
 
             {/* Content */}
@@ -44,7 +45,7 @@ export default function ProjectCard({
                         href={liveUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-1.5 border border-primaryColor text-white text-xs px-3.5 py-1.5 transition-colors hover:bg-primaryColor/20"
+                        className="flex items-center gap-1.5 border border-primaryColor text-white text-sm px-3.5 py-1.5 transition-colors hover:bg-primaryColor/20"
                     >
                         GitHub <span className="text-primary text-xs">&lt;~&gt;</span>
                     </a>
@@ -53,7 +54,7 @@ export default function ProjectCard({
                             href={githubUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center gap-1.5 border border-borderColor text-textPrimaryColor text-xs px-3.5 py-1.5 transition-colors hover:bg-borderColor/20"
+                            className="flex items-center gap-1.5 border border-borderColor text-textPrimaryColor text-sm px-3.5 py-1.5 transition-colors hover:bg-borderColor/20"
                         >
                             Demo
                             <span className='flex items-center justify-center text-xs'>
