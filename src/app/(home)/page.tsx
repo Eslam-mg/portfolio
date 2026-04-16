@@ -125,6 +125,7 @@ export default function page() {
 
             {/* ── SKILLS PREVIEW ── */}
             <section className="">
+                <SectionHeader title="skills" className="mb-0" showLine={true} lineWidth="w-0 sm:w-44 md:w-52 lg:w-72" />
             </section>
         </div>
     )
