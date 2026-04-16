@@ -30,6 +30,17 @@ const featuredProjects = [
         githubUrl: "#",
     },
 ];
+
+const skills = [
+    "React",
+    "Next.js",
+    "TypeScript",
+    "JavaScript",
+    "CSS / Tailwind",
+    "Node.js",
+    "Git",
+    "Figma",
+];
 export default function page() {
     return (
         <div className="font-mono text-gray-text px-6 md:px-12 pt-6 md:pt-12 overflow-hidden space-y-32">
@@ -126,6 +137,16 @@ export default function page() {
             {/* ── SKILLS PREVIEW ── */}
             <section className="">
                 <SectionHeader title="skills" className="mb-0" showLine={true} lineWidth="w-0 sm:w-44 md:w-52 lg:w-72" />
+                <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-3">
+                    {skills.map((skill) => (
+                        <div
+                            key={skill}
+                            className="flex items-center justify-center border border-borderColor px-4 py-3 text-center text-sm text-textPrimaryColor transition-colors"
+                        >
+                            {skill}
+                        </div>
+                    ))}
+                </div>
             </section>
         </div>
     )
