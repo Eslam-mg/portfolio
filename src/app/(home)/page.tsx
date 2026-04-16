@@ -99,14 +99,14 @@ export default function page() {
                     <OpeningQuoteIcon className='flex items-center justify-center w-6 h-6 bg-backgroundColor absolute bottom-0 translate-y-1/2 right-2 z-10 rotate-180 text-borderColor' />
                 </div>
 
-                {/* right Rectangle 24 */}
+                {/* right Rectangle */}
                 <Image
                     src="/Rectangle 24.svg"
                     alt=""
                     width={91}
                     height={91}
                     aria-hidden
-                    className="absolute top-1/2 -translate-y-1/2 -right-14 opacity-40 pointer-events-none"
+                    className="hidden sm:block absolute top-1/2 -translate-y-1/2 -right-14 opacity-40 pointer-events-none"
                 />
             </section>
 
