@@ -122,6 +122,10 @@ export default function page() {
                     ))}
                 </div>
             </section>
+
+            {/* ── SKILLS PREVIEW ── */}
+            <section className="">
+            </section>
         </div>
     )
 };
