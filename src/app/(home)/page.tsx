@@ -140,16 +140,50 @@ export default function page() {
                                 <span>JavaScript</span>
                             </div>
                         </div>
-                    </div>
 
-                    <div className="border border-borderColor">
-                        <div className="border-b border-borderColor text-sm text-white font-bold p-0.5">
-                            Databases
+                        <div className="border border-borderColor">
+                            <div className="border-b border-borderColor text-sm text-white font-bold p-0.5">
+                                Databases
+                            </div>
+                            <div className="text-textPrimaryColor flex flex-row flex-wrap gap-2 text-sm p-0.5">
+                                <span>SQLite</span>
+                                <span>SQL</span>
+                                <span>MySQL</span>
+                            </div>
                         </div>
-                        <div className="text-textPrimaryColor flex flex-row flex-wrap gap-2 text-sm p-0.5">
-                            <span>SQLite</span>
-                            <span>SQL</span>
-                            <span>MySQL</span>
+
+                        <div className="border border-borderColor">
+                            <div className="border-b border-borderColor text-sm text-white font-bold p-0.5">
+                                Other
+                            </div>
+                            <div className="text-textPrimaryColor flex flex-row flex-wrap gap-2 text-sm p-0.5">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>SCSS</span>
+                                <span>tailwindcss</span>
+                            </div>
+                        </div>
+
+                        <div className="border border-borderColor">
+                            <div className="border-b border-borderColor text-sm text-white font-bold p-0.5">
+                                Tools
+                            </div>
+                            <div className="text-textPrimaryColor flex flex-row flex-wrap gap-2 text-sm p-0.5">
+                                <span>VSCode</span>
+                                <span>Git</span>
+                                <span>Figma</span>
+                            </div>
+                        </div>
+
+                        <div className="border border-borderColor">
+                            <div className="border-b border-borderColor text-sm text-white font-bold p-0.5">
+                                Frameworks
+                            </div>
+                            <div className="text-textPrimaryColor flex flex-row flex-wrap gap-2 text-sm p-0.5">
+                                <span>React</span>
+                                <span>Next</span>
+                                <span>Vue</span>
+                            </div>
                         </div>
                     </div>
                 </div>
