@@ -127,9 +127,10 @@ export default function page() {
             {/* ── SKILLS PREVIEW ── */}
             <section className="">
                 <SectionHeader title="skills" className="mb-0" showLine={true} lineWidth="w-0 sm:w-44 md:w-52 lg:w-72" />
-                <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-3">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 border">
+                    <div className="relative"></div>
 
-                    <div className="">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                         <div className="border border-borderColor">
                             <div className="border-b border-borderColor text-sm text-white font-bold p-0.5">
                                 Languages
