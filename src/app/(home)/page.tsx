@@ -141,6 +141,17 @@ export default function page() {
                             </div>
                         </div>
                     </div>
+
+                    <div className="border border-borderColor">
+                        <div className="border-b border-borderColor text-sm text-white font-bold p-0.5">
+                            Databases
+                        </div>
+                        <div className="text-textPrimaryColor flex flex-row flex-wrap gap-2 text-sm p-0.5">
+                            <span>SQLite</span>
+                            <span>SQL</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
