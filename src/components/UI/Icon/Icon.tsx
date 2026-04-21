@@ -21,6 +21,38 @@ export const LogoIcon: React.FC<IconProps> = ({ className }) => (
     </div>
 );
 
+export const GripBoxIcon: React.FC<IconProps> = ({ className }) => (
+    <div className={className}>
+        <svg width={84} height={84} viewBox="0 0 84 84" fill="none" aria-hidden="true">
+            <circle cx={2} cy={2} r={2} fill="#ABB2BF" />
+            <circle cx={22} cy={2} r={2} fill="#ABB2BF" />
+            <circle cx={42} cy={2} r={2} fill="#ABB2BF" />
+            <circle cx={62} cy={2} r={2} fill="#ABB2BF" />
+            <circle cx={82} cy={2} r={2} fill="#ABB2BF" />
+            <circle cx={2} cy={22} r={2} fill="#ABB2BF" />
+            <circle cx={22} cy={22} r={2} fill="#ABB2BF" />
+            <circle cx={42} cy={22} r={2} fill="#ABB2BF" />
+            <circle cx={62} cy={22} r={2} fill="#ABB2BF" />
+            <circle cx={82} cy={22} r={2} fill="#ABB2BF" />
+            <circle cx={2} cy={42} r={2} fill="#ABB2BF" />
+            <circle cx={22} cy={42} r={2} fill="#ABB2BF" />
+            <circle cx={42} cy={42} r={2} fill="#ABB2BF" />
+            <circle cx={62} cy={42} r={2} fill="#ABB2BF" />
+            <circle cx={82} cy={42} r={2} fill="#ABB2BF" />
+            <circle cx={2} cy={62} r={2} fill="#ABB2BF" />
+            <circle cx={22} cy={62} r={2} fill="#ABB2BF" />
+            <circle cx={42} cy={62} r={2} fill="#ABB2BF" />
+            <circle cx={62} cy={62} r={2} fill="#ABB2BF" />
+            <circle cx={82} cy={62} r={2} fill="#ABB2BF" />
+            <circle cx={2} cy={82} r={2} fill="#ABB2BF" />
+            <circle cx={22} cy={82} r={2} fill="#ABB2BF" />
+            <circle cx={42} cy={82} r={2} fill="#ABB2BF" />
+            <circle cx={62} cy={82} r={2} fill="#ABB2BF" />
+            <circle cx={82} cy={82} r={2} fill="#ABB2BF" />
+        </svg>
+    </div>
+);
+
 export const AngleDownIcon: React.FC<IconProps> = ({ className, width = 22, height = 22 }) => (
     <svg className={className} aria-hidden="true" width={width} height={height} fill="none" viewBox="0 0 24 24">
         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="m19 9-7 7-7-7" />
