@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from "next/image";
-import { OpeningQuoteIcon } from '@/src/components/UI/Icon/Icon';
+import { AngleDownIcon, LogoIcon, OpeningQuoteIcon } from '@/src/components/UI/Icon/Icon';
 import SectionHeader from '@/src/components/SectionHeader/SectionHeader';
 import ProjectCard from '@/src/components/ProjectCard/ProjectCard';
 const featuredProjects = [
@@ -128,7 +128,10 @@ export default function page() {
             <section className="">
                 <SectionHeader title="skills" className="mb-0" showLine={true} lineWidth="w-0 sm:w-44 md:w-52 lg:w-72" />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-10">
-                    <div className="relative"></div>
+                    <div className="relative hidden sm:block">
+                        <LogoIcon className='absolute top-10 left-10'/>
+                        <AngleDownIcon className='absolute top-5 left-10'/>
+                    </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                         <div className="border border-borderColor">
