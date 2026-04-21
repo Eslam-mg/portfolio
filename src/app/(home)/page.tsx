@@ -146,6 +146,17 @@ export default function page() {
 
                         <div className="border border-borderColor">
                             <div className="border-b border-borderColor text-sm text-white font-bold p-0.5">
+                                Data Analysis
+                            </div>
+                            <div className="text-textPrimaryColor flex flex-row flex-wrap gap-2 text-sm p-0.5">
+                                <span>EXCEL -</span>
+                                <span>Power BI -</span>
+                                <span>Tableau</span>
+                            </div>
+                        </div>
+
+                        <div className="border border-borderColor">
+                            <div className="border-b border-borderColor text-sm text-white font-bold p-0.5">
                                 Other
                             </div>
                             <div className="text-textPrimaryColor flex flex-row flex-wrap gap-2 text-sm p-0.5">
