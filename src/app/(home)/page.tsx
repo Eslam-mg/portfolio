@@ -127,7 +127,7 @@ export default function page() {
             {/* ── SKILLS PREVIEW ── */}
             <section className="">
                 <SectionHeader title="skills" className="mb-0" showLine={true} lineWidth="w-0 sm:w-44 md:w-52 lg:w-72" />
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 border">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-10">
                     <div className="relative"></div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
