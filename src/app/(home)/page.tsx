@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from "next/image";
-import { AngleDownIcon, GripBoxIcon, LogoIcon, OpeningQuoteIcon } from '@/src/components/UI/Icon/Icon';
+import { AngleDownIcon, GripBoxIcon, LogoIcon, OpeningQuoteIcon, SquareIcon } from '@/src/components/UI/Icon/Icon';
 import SectionHeader from '@/src/components/SectionHeader/SectionHeader';
 import ProjectCard from '@/src/components/ProjectCard/ProjectCard';
 const featuredProjects = [
@@ -76,14 +76,7 @@ export default function page() {
                     </div>
 
                     {/* Bottom-right dots */}
-                    <Image
-                        src="/Dots.svg"
-                        alt=""
-                        width={84}
-                        height={84}
-                        aria-hidden
-                        className="absolute -bottom-15 -right-5 opacity-40 pointer-events-none"
-                    />
+                    <GripBoxIcon className="absolute -bottom-15 -right-5 opacity-40 pointer-events-none" width={84} height={84} />
                 </div>
             </section>
 
@@ -101,14 +94,7 @@ export default function page() {
                 </div>
 
                 {/* right Rectangle */}
-                <Image
-                    src="/Rectangle 24.svg"
-                    alt=""
-                    width={91}
-                    height={91}
-                    aria-hidden
-                    className="hidden sm:block absolute top-1/2 -translate-y-1/2 -right-14 opacity-40 pointer-events-none"
-                />
+                <SquareIcon className="hidden sm:block absolute top-1/2 -translate-y-1/2 -right-14 pointer-events-none" width={91} height={81} />
             </section>
 
             {/* ── PROJECTS PREVIEW ── */}
@@ -129,8 +115,10 @@ export default function page() {
                 <SectionHeader title="skills" className="mb-0" showLine={true} lineWidth="w-0 sm:w-44 md:w-52 lg:w-72" />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-10">
                     <div className="relative hidden sm:block">
-                        <GripBoxIcon className='flex w-96 h-96 absolute top-0 left-2'/>
-                        <LogoIcon className='absolute top-10 left-2'/>
+                        <GripBoxIcon className='flex w-96 h-96 absolute top-5 left-4' />
+                        <SquareIcon className='absolute top-0 left-1/2 translate-x-8' width={76} height={76} />
+                        <LogoIcon className='absolute bottom-4 left-10' />
+                        <GripBoxIcon className='absolute top-1/2 left-1/2' />
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

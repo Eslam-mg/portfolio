@@ -21,9 +21,9 @@ export const LogoIcon: React.FC<IconProps> = ({ className }) => (
     </div>
 );
 
-export const GripBoxIcon: React.FC<IconProps> = ({ className }) => (
+export const GripBoxIcon: React.FC<IconProps> = ({ className, width = 63, height = 63 }) => (
     <div className={className}>
-        <svg width={84} height={84} viewBox="0 0 84 84" fill="none" aria-hidden="true">
+        <svg width={width} height={height} viewBox="0 0 84 84" fill="none" aria-hidden="true">
             <circle cx={2} cy={2} r={2} fill="#ABB2BF" />
             <circle cx={22} cy={2} r={2} fill="#ABB2BF" />
             <circle cx={42} cy={2} r={2} fill="#ABB2BF" />
@@ -49,6 +49,14 @@ export const GripBoxIcon: React.FC<IconProps> = ({ className }) => (
             <circle cx={42} cy={82} r={2} fill="#ABB2BF" />
             <circle cx={62} cy={82} r={2} fill="#ABB2BF" />
             <circle cx={82} cy={82} r={2} fill="#ABB2BF" />
+        </svg>
+    </div>
+);
+
+export const SquareIcon: React.FC<IconProps> = ({ className, width = 86, height = 86 }) => (
+    <div className={className}>
+        <svg width={width} height={height} viewBox="0 0 86 86" fill="none" aria-hidden="true">
+            <rect x="0.5" y="0.5" width={85} height={85} stroke="#ABB2BF" />
         </svg>
     </div>
 );
