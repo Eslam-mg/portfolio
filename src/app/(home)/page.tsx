@@ -33,7 +33,7 @@ const featuredProjects = [
 
 export default function page() {
     return (
-        <div className="font-mono text-gray-text px-6 md:px-12 pt-6 md:pt-12 overflow-hidden space-y-32">
+        <div className="font-mono text-gray-text px-6 md:px-12 pt-6 md:pt-12 overflow-hidden space-y-24">
             {/* ── HERO ── */}
             <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-16 relative">
                 {/* Text side */}
@@ -98,7 +98,7 @@ export default function page() {
             </section>
 
             {/* ── PROJECTS PREVIEW ── */}
-            <section className="">
+            <section className="mt-8">
                 <div className="flex items-center justify-between">
                     <SectionHeader title="projects" className="mb-0" showLine={true} lineWidth="w-0 sm:w-52 md:w-72 lg:w-96" />
                     <Link href="/" className='text-textPrimaryColor'>View all ~~&gt;</Link>
@@ -193,45 +193,47 @@ export default function page() {
             </section>
 
             {/* ── ABOUT ME PREVIEW ── */}
-            <section className="grid grid-cols-1 md:grid-cols-2 gap-16">
-                <div className='text-textPrimaryColor'>
-                    <SectionHeader title="about-me" className="mb-7" showLine={true} lineWidth="w-0 sm:w-52 md:w-72 lg:w-96" />
-                    <p className="text-sm leading-relaxed mb-3">
-                        Hello, I&apos;m Eslam! I&apos;m a self-taught front-end developer
-                        based in Egypt. I can develop responsive websites from scratch
-                        and raise them into modern user-friendly web experiences.
-                    </p>
-                    <p className="text-sm leading-relaxed mb-6">
-                        Transforming my creativity and knowledge into websites has been my
-                        passion for over a year.
-                    </p>
-                    <Link
-                        href="/about-me"
-                        className="border border-primaryColor text-white px-4 py-2 text-xs hover:bg-primaryColor/20 transition-colors inline-block"
-                    >
-                        Read more →
-                    </Link>
-                </div>
+            <section className="">
+                <SectionHeader title="about-me" className="mb-7" showLine={true} lineWidth="w-0 sm:w-52 md:w-72 lg:w-96" />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+                    <div className='text-textPrimaryColor'>
+                        <p className="text-sm leading-relaxed mb-3">
+                            Hello, I&apos;m Eslam! I&apos;m a self-taught front-end developer
+                            based in Egypt. I can develop responsive websites from scratch
+                            and raise them into modern user-friendly web experiences.
+                        </p>
+                        <p className="text-sm leading-relaxed mb-6">
+                            Transforming my creativity and knowledge into websites has been my
+                            passion for over a year.
+                        </p>
+                        <Link
+                            href="/about-me"
+                            className="border border-primaryColor text-white px-4 py-2 text-xs hover:bg-primaryColor/20 transition-colors inline-block"
+                        >
+                            Read more →
+                        </Link>
+                    </div>
 
-                {/* Profile card */}
-                <div className="border border-borderColor p-6 flex flex-col items-center gap-4">
-                    <div className="w-24 h-24 rounded-full flex items-center justify-center">
-                        <svg width="50" height="60" viewBox="0 0 50 60" fill="none">
-                            <circle cx="25" cy="18" r="14" fill="#abb2bf33" />
-                            <ellipse cx="25" cy="52" rx="22" ry="16" fill="#abb2bf33" />
-                        </svg>
-                    </div>
-                    <div className="text-center">
-                        <p className="text-white m-0 mb-1 font-semibold">Eslam</p>
-                        <p className="text-textPrimaryColor m-0 text-xs">Frontend Developer & Data Analyst</p>
-                    </div>
-                    <div className="w-full border-t border-borderColor pt-4 flex flex-col gap-2">
-                        {["Friendly", "Ambitious", "Immovable", "Focused"].map((trait) => (
-                            <div key={trait} className="flex items-center gap-2 text-xs">
-                                <span className="text-primaryColor">✓</span>
-                                <span className="text-textPrimaryColor">{trait}</span>
-                            </div>
-                        ))}
+                    {/* Profile card */}
+                    <div className="border border-borderColor p-6 flex flex-col items-center gap-4">
+                        <div className="w-24 h-24 rounded-full flex items-center justify-center">
+                            <svg width="50" height="60" viewBox="0 0 50 60" fill="none">
+                                <circle cx="25" cy="18" r="14" fill="#abb2bf33" />
+                                <ellipse cx="25" cy="52" rx="22" ry="16" fill="#abb2bf33" />
+                            </svg>
+                        </div>
+                        <div className="text-center">
+                            <p className="text-white m-0 mb-1 font-semibold">Eslam</p>
+                            <p className="text-textPrimaryColor m-0 text-xs">Frontend Developer & Data Analyst</p>
+                        </div>
+                        <div className="w-full border-t border-borderColor pt-4 flex flex-col gap-2">
+                            {["Friendly", "Ambitious", "Immovable", "Focused"].map((trait) => (
+                                <div key={trait} className="flex items-center gap-2 text-xs">
+                                    <span className="text-primaryColor">✓</span>
+                                    <span className="text-textPrimaryColor">{trait}</span>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>
@@ -250,9 +252,9 @@ export default function page() {
                         </p>
                         <div className="flex flex-col gap-2">
                             {[
-                                { label: "GitHub", value: "Eslam-mg", href:"https://github.com/Eslam-mg" },
-                                { label: "LinkedIn", value: "islam-mg", href:"https://www.linkedin.com/in/islam-mg/"  },
-                                { label: "Email", value: "islam.gomaa.3rb@gmail.com", href:"https://islam.gomaa.3rb@gmail.com"  },
+                                { label: "GitHub", value: "Eslam-mg", href: "https://github.com/Eslam-mg" },
+                                { label: "LinkedIn", value: "islam-mg", href: "https://www.linkedin.com/in/islam-mg/" },
+                                { label: "Email", value: "islam.gomaa.3rb@gmail.com", href: "https://islam.gomaa.3rb@gmail.com" },
                             ].map((item) => (
                                 <div key={item.label} className="flex gap-2 text-xs">
                                     <a href={item.href} target='_blank' className="text-textPrimaryColor/50">{item.label}:</a>
