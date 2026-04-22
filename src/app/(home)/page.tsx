@@ -121,14 +121,14 @@ export default function page() {
                         <GripBoxIcon className='absolute top-1/2 left-1/2' />
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div className="grid lg:grid-rows-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                         <div className="border border-borderColor">
                             <div className="border-b border-borderColor text-sm text-white font-bold p-0.5">
                                 Languages
                             </div>
                             <div className="text-textPrimaryColor flex flex-row flex-wrap gap-2 text-sm p-0.5">
-                                <span>TypeScript</span>
-                                <span>Python</span>
+                                <span>TypeScript -</span>
+                                <span>Python -</span>
                                 <span>JavaScript</span>
                             </div>
                         </div>
@@ -138,13 +138,25 @@ export default function page() {
                                 Databases
                             </div>
                             <div className="text-textPrimaryColor flex flex-row flex-wrap gap-2 text-sm p-0.5">
-                                <span>SQLite</span>
-                                <span>SQL</span>
+                                <span>SQLite -</span>
+                                <span>SQL -</span>
                                 <span>MySQL</span>
                             </div>
                         </div>
 
                         <div className="border border-borderColor">
+                            <div className="border-b border-borderColor text-sm text-white font-bold p-0.5">
+                                Other
+                            </div>
+                            <div className="text-textPrimaryColor flex flex-row flex-wrap gap-2 text-sm p-0.5">
+                                <span>HTML -</span>
+                                <span>CSS -</span>
+                                <span>SCSS -</span>
+                                <span>tailwindcss</span>
+                            </div>
+                        </div>
+
+                        <div className="border border-borderColor lg:row-start-2 lg:col-start-2">
                             <div className="border-b border-borderColor text-sm text-white font-bold p-0.5">
                                 Data Analysis
                             </div>
@@ -155,37 +167,25 @@ export default function page() {
                             </div>
                         </div>
 
-                        <div className="border border-borderColor">
-                            <div className="border-b border-borderColor text-sm text-white font-bold p-0.5">
-                                Other
-                            </div>
-                            <div className="text-textPrimaryColor flex flex-row flex-wrap gap-2 text-sm p-0.5">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>SCSS</span>
-                                <span>tailwindcss</span>
-                            </div>
-                        </div>
-
-                        <div className="border border-borderColor">
-                            <div className="border-b border-borderColor text-sm text-white font-bold p-0.5">
-                                Tools
-                            </div>
-                            <div className="text-textPrimaryColor flex flex-row flex-wrap gap-2 text-sm p-0.5">
-                                <span>VSCode</span>
-                                <span>Git</span>
-                                <span>Figma</span>
-                            </div>
-                        </div>
-
-                        <div className="border border-borderColor">
+                        <div className="border border-borderColor lg:col-start-3">
                             <div className="border-b border-borderColor text-sm text-white font-bold p-0.5">
                                 Frameworks
                             </div>
                             <div className="text-textPrimaryColor flex flex-row flex-wrap gap-2 text-sm p-0.5">
-                                <span>React</span>
-                                <span>Next</span>
+                                <span>React -</span>
+                                <span>Next -</span>
                                 <span>Vue</span>
+                            </div>
+                        </div>
+
+                        <div className="border border-borderColor lg:row-start-3 lg:col-start-3">
+                            <div className="border-b border-borderColor text-sm text-white font-bold p-0.5">
+                                Tools
+                            </div>
+                            <div className="text-textPrimaryColor flex flex-row flex-wrap gap-2 text-sm p-0.5">
+                                <span>VSCode -</span>
+                                <span>Git -</span>
+                                <span>Figma</span>
                             </div>
                         </div>
                     </div>
