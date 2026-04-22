@@ -235,6 +235,34 @@ export default function page() {
                     </div>
                 </div>
             </section>
+
+            {/* ── CONTACTS CTA ── */}
+            <section className="">
+                <SectionHeader title="contacts" className="mb-6" showLine={true} lineWidth="w-0 sm:w-44 md:w-52 lg:w-72" />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <p className="text-sm leading-relaxed text-textPrimaryColor">
+                        I&apos;m interested in freelance opportunities. However, if you
+                        have other requests or questions, don&apos;t hesitate to contact me.
+                    </p>
+                    <div className="border border-borderColor p-6">
+                        <p className="text-white font-semibold text-sm mb-3">
+                            <span className="text-primaryColor"># </span>media
+                        </p>
+                        <div className="flex flex-col gap-2">
+                            {[
+                                { label: "GitHub", value: "Eslam-mg", href:"https://github.com/Eslam-mg" },
+                                { label: "LinkedIn", value: "islam-mg", href:"https://www.linkedin.com/in/islam-mg/"  },
+                                { label: "Email", value: "islam.gomaa.3rb@gmail.com", href:"https://islam.gomaa.3rb@gmail.com"  },
+                            ].map((item) => (
+                                <div key={item.label} className="flex gap-2 text-xs">
+                                    <a href={item.href} target='_blank' className="text-textPrimaryColor/50">{item.label}:</a>
+                                    <a href={item.href} target='_blank' className="text-textPrimaryColor">{item.value}</a>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     )
 };
