@@ -26,8 +26,15 @@ const socialLinks = [
 export default function Footer() {
     return (
         <footer className="border-t border-borderColor mt-20 font-mono">
-            <div className="px-6 py-8 grid grid-cols-2 items-center gap-8">
-
+            <div className="px-8 py-8 grid grid-cols-2 items-center gap-8">
+                {/* Left — branding */}
+                <div>
+                    <div className="flex items-center gap-1 mb-1">
+                        <Image src="/personal-logo.webp" alt="Logo" width={24} height={24} />
+                        <span className="text-white font-semibold">Eslam</span>
+                    </div>
+                    <p className="text-sm text-textPrimaryColor m-0">islam.gomaa.3rb@gmail.com</p>
+                </div>
             </div>
         </footer>
     )
