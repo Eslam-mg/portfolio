@@ -1,4 +1,6 @@
 import React from 'react';
+import Image from "next/image";
+import Link from "next/link";
 
 const socialLinks = [
     {
@@ -23,6 +25,8 @@ const socialLinks = [
 
 export default function Footer() {
     return (
-        <div>Footer</div>
+        <footer className="border-t border-borderColor mt-20 font-mono">
+
+        </footer>
     )
 }
