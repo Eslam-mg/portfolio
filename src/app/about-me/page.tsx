@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from "next/image";
 import type { Metadata } from "next";
 import SectionHeader from '@/src/components/SectionHeader/SectionHeader';
 export const metadata: Metadata = {
@@ -39,11 +40,8 @@ export default function page() {
 
                 {/* Avatar card */}
                 <div className="border border-white/20 p-8 flex flex-col items-center gap-5">
-                    <div className="w-28 h-28 rounded-full bg-bg flex items-center justify-center border-2 border-primary/30">
-                        <svg width="56" height="68" viewBox="0 0 56 68" fill="none">
-                            <circle cx="28" cy="20" r="16" fill="#abb2bf33" />
-                            <ellipse cx="28" cy="58" rx="26" ry="18" fill="#abb2bf33" />
-                        </svg>
+                    <div className="w-32 h-32 rounded-full bg-bg flex items-center justify-center border-2 border-borderColor overflow-hidden">
+                        <Image src="/myPhoto.jpg" alt='my image' width={190} height={180}/>
                     </div>
                     <div className="text-center">
                         <p className="text-white m-0 mb-1 font-semibold text-base">Eslam</p>
