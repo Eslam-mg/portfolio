@@ -61,9 +61,9 @@ export default function page() {
             </div>
 
             {/* Skills */}
-            <div className="mb-20">
-                <SectionHeader title="skills" />
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+            <div className="mb-8">
+                <SectionHeader title="skills" showLine={true} lineWidth="w-0 sm:w-44 md:w-52 lg:w-72" />
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 mt-8">
                     {skillGroups.map((group) => (
                         <div key={group.title} className="border border-borderColor p-5">
                             <h3 className="text-white m-0 mb-3.5 text-sm font-semibold border-b border-borderColor pb-2.5">
