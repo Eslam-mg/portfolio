@@ -7,6 +7,14 @@ export const metadata: Metadata = {
         "Learn more about Eslam — Junior Front-End Developer skilled in React and Next.js, with knowledge of Excel, SQL, and Power BI for data analysis.",
 };
 
+const skillGroups = [
+    { title: "Languages", skills: ["TypeScript", "JavaScript", "HTML", "CSS", "SQL"] },
+    { title: "Frameworks", skills: ["React", "Next.js", "Node.js", "Express"] },
+    { title: "Tools", skills: ["Git", "GitHub", "VS Code", "Figma", "Postman"] },
+    { title: "Databases", skills: ["MongoDB", "PostgreSQL", "Firebase"] },
+    { title: "Other", skills: ["REST APIs", "SEO", "Accessibility", "Performance"] },
+];
+
 export default function page() {
     return (
         <div className="font-mono text-textPrimaryColor px-6 md:px-12 pt-6 md:pt-12 overflow-hidden space-y-24">
