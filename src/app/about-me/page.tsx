@@ -59,6 +59,28 @@ export default function page() {
                     </div>
                 </div>
             </div>
+
+            {/* Skills */}
+            <div className="mb-20">
+                <SectionHeader title="skills" />
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+                    {skillGroups.map((group) => (
+                        <div key={group.title} className="border border-borderColor p-5">
+                            <h3 className="text-white m-0 mb-3.5 text-sm font-semibold border-b border-borderColor pb-2.5">
+                                {group.title}
+                            </h3>
+                            <ul className="list-none m-0 p-0">
+                                {group.skills.map((skill) => (
+                                    <li key={skill} className="text-textPrimaryColor text-xs py-1 flex items-center gap-1.5">
+                                        <span className="text-primary text-[10px]">▸</span>
+                                        {skill}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    ))}
+                </div>
+            </div>
         </div>
     )
 };
