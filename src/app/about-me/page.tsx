@@ -22,7 +22,7 @@ export default function page() {
             {/* Bio + profile card */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start mb-20">
                 <div>
-                    <SectionHeader title="about-me" />
+                    <SectionHeader title="about-me" className='mb-6' />
                     <p className="text-sm leading-relaxed mb-4">
                         Hello, I'm Eslam! I'm a self-taught front-end developer
                         based in Egypt. I can develop responsive websites from scratch
@@ -39,7 +39,7 @@ export default function page() {
                 </div>
 
                 {/* Avatar card */}
-                <div className="border border-white/20 p-8 flex flex-col items-center gap-5">
+                <div className="border border-borderColor p-8 flex flex-col items-center gap-5">
                     <div className="w-32 h-32 rounded-full bg-bg flex items-center justify-center border-2 border-borderColor overflow-hidden">
                         <Image src="/myPhoto.jpg" alt='my image' width={190} height={180}/>
                     </div>
@@ -47,9 +47,9 @@ export default function page() {
                         <p className="text-white m-0 mb-1 font-semibold text-base">Eslam</p>
                         <p className="text-gray-text m-0 text-xs">Frontend Developer & Data Analysit</p>
                     </div>
-                    <div className="w-full border-t border-white/10 pt-4 flex flex-col gap-2.5">
+                    <div className="w-full border-t border-borderColor pt-4 flex flex-row justify-between">
                         {["Friendly", "Ambitious", "Immovable", "Focused"].map((t) => (
-                            <div key={t} className="flex items-center gap-2.5 text-[13px]">
+                            <div key={t} className="flex items-center gap-0.5 text-xs">
                                 <span className="text-primary text-base">✓</span>
                                 <span>{t}</span>
                             </div>
