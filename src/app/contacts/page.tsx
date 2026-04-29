@@ -1,5 +1,6 @@
 import React from 'react';
 import type { Metadata } from "next";
+import SectionHeader from '@/src/components/SectionHeader/SectionHeader';
 
 export const metadata: Metadata = {
     title: "Contacts | Eslam",
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 export default function page() {
     return (
         <div className="px-6 md:px-12 pt-6 md:pt-12 overflow-hidden space-y-24 font-mono text-textPrimaryColor">
-
+            <SectionHeader title="contacts" />
         </div>
     )
 }
