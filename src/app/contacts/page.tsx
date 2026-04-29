@@ -7,6 +7,13 @@ export const metadata: Metadata = {
     description: "Get in touch with Eslam — open to freelance and collaboration.",
 };
 
+const mediaLinks = [
+    { label: "Email", value: "elias@gmail.com", href: "mailto:elias@gmail.com" },
+    { label: "GitHub", value: "@EliasGit", href: "https://github.com" },
+    { label: "LinkedIn", value: "Elias Dev", href: "https://linkedin.com" },
+    { label: "Twitter", value: "@EliasUI", href: "https://twitter.com" },
+];
+
 export default function page() {
     return (
         <div className="px-6 md:px-12 pt-6 md:pt-12 overflow-hidden font-mono text-textPrimaryColor">
