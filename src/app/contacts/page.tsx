@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Metadata } from "next";
 import SectionHeader from '@/src/components/SectionHeader/SectionHeader';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
     title: "Contacts | Eslam",
@@ -8,10 +9,10 @@ export const metadata: Metadata = {
 };
 
 const mediaLinks = [
-    { label: "Email", value: "elias@gmail.com", href: "mailto:elias@gmail.com" },
-    { label: "GitHub", value: "@EliasGit", href: "https://github.com" },
-    { label: "LinkedIn", value: "Elias Dev", href: "https://linkedin.com" },
-    { label: "Twitter", value: "@EliasUI", href: "https://twitter.com" },
+    { label: "Email", value: "islam.gomaa.3rb@gmail.com", href: "mailto:islam.gomaa.3rb@gmail.com" },
+    { label: "GitHub", value: "@Eslam-mg", href: "https://github.com/Eslam-mg" },
+    { label: "LinkedIn", value: "islam-mg", href: "https://www.linkedin.com/in/islam-mg/" },
+    { label: "Twitter", value: "@IslamMo_G", href: "https://x.com/IslamMo_G" },
 ];
 
 export default function page() {
@@ -28,6 +29,32 @@ export default function page() {
                         If you have any questions, project ideas, or job opportunities, feel free to get in touch. I’m always open to discussing new challenges and exciting opportunities.
                     </p>
                     <p>I’ll do my best to respond to all messages as soon as possible.</p>
+                </div>
+
+                {/* Right — media box */}
+                <div className="border border-borderColor p-7">
+                    <SectionHeader title="all-media" className="mb-5" />
+                    <div className="flex flex-col gap-3.5">
+                        {mediaLinks.map((item) => (
+                            <div key={item.label} className="flex gap-3 text-sm">
+                                <span className="text-textPrimaryColor/50 min-w-17.5">
+                                    {item.label}:
+                                </span>
+                                <Link
+                                    href={item.href}
+                                    target={item.href.startsWith("http") ? "_blank" : undefined}
+                                    rel={
+                                        item.href.startsWith("http")
+                                            ? "noopener noreferrer"
+                                            : undefined
+                                    }
+                                    className="text-textPrimaryColor hover:opacity-80 transition-opacity"
+                                >
+                                    {item.value}
+                                </Link>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>
