@@ -8,6 +8,8 @@ export const metadata: Metadata = {
 
 export default function page() {
     return (
-        <div>page</div>
+        <div className="px-6 md:px-12 pt-6 md:pt-12 overflow-hidden space-y-24 font-mono text-textPrimaryColor">
+
+        </div>
     )
 }
