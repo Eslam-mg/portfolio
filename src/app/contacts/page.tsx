@@ -15,7 +15,7 @@ export default function page() {
                 {/* Left — description */}
                 <div className='space-y-4 text-base leading-relaxed'>
                     <p>
-                        I'm currently available for freelance projects, full-time roles, part-time opportunities, and remote collaborations in Front-End Development and Data Analysis. 
+                        I'm currently available for freelance projects, full-time roles, part-time opportunities, and remote collaborations in Front-End Development and Data Analysis.
                     </p>
                     <p>
                         If you have any questions, project ideas, or job opportunities, feel free to get in touch. I’m always open to discussing new challenges and exciting opportunities.
