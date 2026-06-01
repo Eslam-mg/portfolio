@@ -49,10 +49,10 @@ export default function page() {
                         Eslam is a{" "}
                         <span className="text-primaryColor">web designer</span>{" "}
                         and{" "}
-                        <span className="text-primaryColor">front-end developer</span>
+                        <span className="text-primaryColor">data analyst</span>
                     </h1>
                     <p className="text-textPrimaryColor text-[15px] leading-7 m-0 mb-8 max-w-md">
-                        He crafts responsive websites where technologies meet creativity.
+                        Combining modern web development with data-driven analysis to create engaging digital experiences and actionable insights.
                     </p>
                     <div className="flex gap-4 flex-wrap">
                         <Link
