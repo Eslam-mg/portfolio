@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from "next/image";
+import type { Metadata } from "next";
 import { AngleDownIcon, GripBoxIcon, LogoIcon, OpeningQuoteIcon, SquareIcon } from '@/src/components/UI/Icon/Icon';
 import SectionHeader from '@/src/components/SectionHeader/SectionHeader';
 import ProjectCard from '@/src/components/ProjectCard/ProjectCard';
@@ -30,6 +31,12 @@ const featuredProjects = [
         githubUrl: "#",
     },
 ];
+
+export const metadata: Metadata = {
+    title: "Eslam Mohamed | Portfolio",
+    description:
+        "Portfolio of Eslam Mohamed, showcasing Front-End Development and Data Analysis projects built with React, Next.js, Power BI, SQL, and Excel.",
+};
 
 export default function page() {
     return (
