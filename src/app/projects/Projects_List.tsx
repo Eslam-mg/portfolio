@@ -7,4 +7,12 @@ export const myProjects = [
         githubUrl: "https://github.com/Eslam-mg/Ecommerce-Next.tsx",
         liveUrl: "https://ecommerce-next-tsx.vercel.app/",
     },
+    {
+        id: 2,
+        title: "Supply Chain Dashboard",
+        description: "Developed a Supply Chain Analytics Dashboard using Power BI, SQL, and Power Query to analyze sales, inventory levels, supplier performance, and operational KPIs, enabling data-driven decision making.",
+        technologies: ["Python", "SQL", "Power Query", "Power BI"],
+        githubUrl: "https://github.com/Eslam-mg/Data-Analysis-Learning/tree/main/supply%20chain",
+        liveUrl: "",
+    },
 ];
