@@ -15,7 +15,7 @@ export default function ProjectCard({
     githubUrl = "#",
 }: ProjectCardProps) {
     return (
-        <div className="border border-borderColor flex flex-col transition-colors hover:border-white/40">
+        <div className="h-fit border border-borderColor flex flex-col transition-colors hover:border-white/40">
             {/* Image area */}
             <div className="bg-backgroundColor h-44 relative border-b border-borderColor flex items-center justify-center overflow-hidden">
             </div>
