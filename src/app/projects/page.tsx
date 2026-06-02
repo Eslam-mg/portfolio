@@ -14,7 +14,7 @@ export default function page() {
         <div className="font-mono text-gray-text px-6 md:px-12 pt-6 md:pt-12 overflow-hidden space-y-24">
             <SectionHeader title="Projects" subtitle="List of my projects" />
 
-            <div className="">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
                 {myProjects.map(project =>
                     <ProjectCard
                         key={project.id}
