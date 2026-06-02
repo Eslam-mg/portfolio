@@ -42,16 +42,16 @@ export default function ProjectCard({
                 {/* Buttons */}
                 <div className="flex gap-3">
                     <a
-                        href={liveUrl}
+                        href={githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-1.5 border border-primaryColor text-white text-sm px-3.5 py-1.5 transition-colors hover:bg-primaryColor/20"
                     >
                         GitHub <span className="text-primary text-xs">&lt;~&gt;</span>
                     </a>
-                    {githubUrl && (
+                    {liveUrl && (
                         <a
-                            href={githubUrl}
+                            href={liveUrl}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center gap-1.5 border border-borderColor text-textPrimaryColor text-sm px-3.5 py-1.5 transition-colors hover:bg-borderColor/20"
