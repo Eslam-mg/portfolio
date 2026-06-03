@@ -5,6 +5,8 @@ interface ProjectCardProps {
     technologies: string[];
     liveUrl?: string;
     githubUrl?: string;
+    mainImage?: string;
+    videoUrl?: string;
 };
 
 export default function ProjectCard({
@@ -13,6 +15,8 @@ export default function ProjectCard({
     technologies,
     liveUrl = "#",
     githubUrl = "#",
+    mainImage,
+    videoUrl,
 }: ProjectCardProps) {
     return (
         <div className="h-fit border border-borderColor flex flex-col transition-colors hover:border-white/40">
