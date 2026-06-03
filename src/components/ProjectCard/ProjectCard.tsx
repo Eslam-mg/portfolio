@@ -42,14 +42,29 @@ export default function ProjectCard({
     return (
         <div className="h-fit border border-borderColor flex flex-col transition-colors hover:border-white/40">
             {/* Image area */}
-            <div className="bg-backgroundColor h-44 relative border-b border-borderColor flex items-center justify-center overflow-hidden">
+            <div
+                className="bg-backgroundColor h-44 relative border-b border-borderColor flex items-center justify-center overflow-hidden cursor-pointer"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+            >
                 {mainImage && (
                     <Image
                         src={mainImage}
                         alt={title}
                         fill
-                        className={`object-fill transition-opacity duration-300`}
+                        className={`object-cover transition-opacity duration-300 ${isHovered && videoUrl ? 'opacity-0' : 'opacity-100'}`}
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                )}
+
+                {videoUrl && (
+                    <video
+                        ref={videoRef}
+                        src={videoUrl}
+                        muted
+                        loop
+                        playsInline
+                        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
                     />
                 )}
             </div>
