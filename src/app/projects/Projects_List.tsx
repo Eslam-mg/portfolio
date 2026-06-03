@@ -6,6 +6,17 @@ export const myProjects = [
         technologies: ["Next.js", "TypeScript", "React", "Tailwind CSS"],
         githubUrl: "https://github.com/Eslam-mg/Ecommerce-Next.tsx",
         liveUrl: "https://ecommerce-next-tsx.vercel.app/",
+        mainImage: "/projects/ecommerce/main_img.webp",
+        videoUrl: "/projects/ecommerce/video.mp4",
+        images: [
+            "/projects/ecommerce/main_img.webp",
+            "/projects/ecommerce/products.webp",
+            "/projects/ecommerce/product-details.webp",
+            "/projects/ecommerce/cartList.webp",
+            "/projects/ecommerce/wishlist.webp",
+            "/projects/ecommerce/login.webp",
+            "/projects/ecommerce/singup.webp"
+        ],
     },
     {
         id: 2,
