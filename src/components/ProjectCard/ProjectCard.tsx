@@ -22,9 +22,14 @@ export default function ProjectCard({
     videoUrl,
 }: ProjectCardProps) {
     const [isHovered, setIsHovered] = useState(false);
+    const [isVideoLoading, setIsVideoLoading] = useState(false);
     const videoRef = useRef<HTMLVideoElement>(null);
+
     const handleMouseEnter = () => {
         setIsHovered(true);
+        if (videoUrl) {
+            setIsVideoLoading(true);
+        }
         if (videoRef.current) {
             videoRef.current.play().catch((err) => {
                 console.debug("Video play interrupted/failed:", err);
@@ -34,11 +39,13 @@ export default function ProjectCard({
 
     const handleMouseLeave = () => {
         setIsHovered(false);
+        setIsVideoLoading(false);
         if (videoRef.current) {
             videoRef.current.pause();
             videoRef.current.currentTime = 0;
         }
     };
+
     return (
         <div className="h-fit border border-borderColor flex flex-col transition-colors hover:border-white/40">
             {/* Image area */}
