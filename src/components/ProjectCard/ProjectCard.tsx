@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useRef } from 'react';
+import Image from "next/image";
 interface ProjectCardProps {
     title: string;
     description: string;
@@ -42,6 +43,15 @@ export default function ProjectCard({
         <div className="h-fit border border-borderColor flex flex-col transition-colors hover:border-white/40">
             {/* Image area */}
             <div className="bg-backgroundColor h-44 relative border-b border-borderColor flex items-center justify-center overflow-hidden">
+                {mainImage && (
+                    <Image
+                        src={mainImage}
+                        alt={title}
+                        fill
+                        className={`object-fill transition-opacity duration-300`}
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                )}
             </div>
 
             {/* Tech tags */}
