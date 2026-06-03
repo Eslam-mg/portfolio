@@ -1,4 +1,6 @@
-import React from 'react'
+"use client";
+
+import React, { useState, useRef } from 'react';
 interface ProjectCardProps {
     title: string;
     description: string;
@@ -18,6 +20,24 @@ export default function ProjectCard({
     mainImage,
     videoUrl,
 }: ProjectCardProps) {
+    const [isHovered, setIsHovered] = useState(false);
+    const videoRef = useRef<HTMLVideoElement>(null);
+    const handleMouseEnter = () => {
+        setIsHovered(true);
+        if (videoRef.current) {
+            videoRef.current.play().catch((err) => {
+                console.debug("Video play interrupted/failed:", err);
+            });
+        }
+    };
+
+    const handleMouseLeave = () => {
+        setIsHovered(false);
+        if (videoRef.current) {
+            videoRef.current.pause();
+            videoRef.current.currentTime = 0;
+        }
+    };
     return (
         <div className="h-fit border border-borderColor flex flex-col transition-colors hover:border-white/40">
             {/* Image area */}
