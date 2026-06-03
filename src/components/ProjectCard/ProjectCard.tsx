@@ -59,9 +59,19 @@ export default function ProjectCard({
                         src={mainImage}
                         alt={title}
                         fill
-                        className={`object-cover transition-opacity duration-300 ${isHovered && videoUrl ? 'opacity-0' : 'opacity-100'}`}
+                        className={`object-fill transition-opacity duration-300 ${isHovered && videoUrl && !isVideoLoading ? 'opacity-0' : 'opacity-100'}`}
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
+                )}
+
+                {videoUrl && (
+                    <div
+                        className={`absolute z-50 inset-0 flex items-center justify-center bg-backgroundColor/50 transition-opacity duration-300 pointer-events-none ${isHovered && isVideoLoading ? 'opacity-100' : 'opacity-0'}`}
+                    >
+                        <div className="w-12 h-12 rounded-full bg-primaryColor/20 border border-primaryColor/40 flex items-center justify-center animate-scale-pulse">
+                            <div className="w-4 h-4 rounded-full bg-primaryColor shadow-[0_0_12px_#C778DD]" />
+                        </div>
+                    </div>
                 )}
 
                 {videoUrl && (
@@ -71,7 +81,9 @@ export default function ProjectCard({
                         muted
                         loop
                         playsInline
-                        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+                        onPlaying={() => setIsVideoLoading(false)}
+                        onWaiting={() => setIsVideoLoading(true)}
+                        className={`absolute z-0 inset-0 w-full h-full object-cover transition-opacity duration-300 ${isHovered && !isVideoLoading ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
                     />
                 )}
             </div>
