@@ -25,5 +25,14 @@ export const myProjects = [
         technologies: ["Python", "SQL", "Power Query", "Power BI"],
         githubUrl: "https://github.com/Eslam-mg/Data-Analysis-Learning/tree/main/supply%20chain",
         liveUrl: "",
+        mainImage: "/projects/supply chain/main_img.webp",
+        videoUrl: "/projects/supply chain/video.mp4",
+        images: [
+            "/projects/supply chain/main_img.webp",
+            "/projects/supply chain/customer with tootipe.webp",
+            "/projects/supply chain/customer.webp",
+            "/projects/supply chain/sales.webp",
+            "/projects/supply chain/shipping.webp"
+        ],
     },
 ];
