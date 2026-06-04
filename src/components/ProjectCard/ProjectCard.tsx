@@ -4,7 +4,7 @@ import React, { useState, useRef } from 'react';
 import Image from "next/image";
 interface ProjectCardProps {
     title: string;
-    description: string;
+    shortDescription: string;
     technologies: string[];
     liveUrl?: string;
     githubUrl?: string;
@@ -14,7 +14,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard({
     title,
-    description,
+    shortDescription,
     technologies,
     liveUrl = "#",
     githubUrl = "#",
@@ -104,7 +104,7 @@ export default function ProjectCard({
             <div className="p-5 flex flex-col flex-1">
                 <h3 className="text-white m-0 mb-2 text-base md:text-lg font-semibold">{title}</h3>
                 <p className="text-textPrimaryColor m-0 mb-4 text-[13px] leading-relaxed flex-1">
-                    {description}
+                    {shortDescription}
                 </p>
 
                 {/* Buttons */}
