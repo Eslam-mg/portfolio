@@ -1,6 +1,7 @@
 export const myProjects = [
     {
         id: 1,
+        type: "front-end",
         title: "Ecommerce Next.js",
         shortDescription: "E-commerce platform with product browsing, shopping cart, wishlist, authentication, and a fully responsive user experience.",
         fullDescription: "Developed a full-stack e-commerce application using Next.js and TypeScript, delivering a fast and scalable shopping experience. The project includes product listing and filtering, detailed product pages, shopping cart management, wishlist functionality, user authentication, and responsive layouts for all devices. Built with React and Tailwind CSS to ensure maintainable code, reusable components, and a modern user interface while leveraging Next.js features for performance optimization and routing.",
@@ -21,6 +22,7 @@ export const myProjects = [
     },
     {
         id: 2,
+        type:"data analysis",
         title: "Supply Chain Dashboard",
         shortDescription: "Interactive dashboard providing insights into sales performance, inventory management, supplier efficiency, and key supply chain metrics.",
         fullDescription: "Designed and developed a Supply Chain Analytics Dashboard to transform raw business data into actionable insights. The dashboard analyzes sales trends, inventory levels, supplier performance, shipping operations, and key operational KPIs. Data was cleaned, transformed, and modeled using SQL, Python, and Power Query before being visualized in Power BI. Interactive reports and drill-down features enable stakeholders to monitor performance, identify bottlenecks, and support data-driven decision making.",
