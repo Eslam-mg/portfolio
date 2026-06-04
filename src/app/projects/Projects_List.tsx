@@ -29,8 +29,8 @@ export const myProjects = [
         videoUrl: "/projects/supply chain/video.mp4",
         images: [
             "/projects/supply chain/main_img.webp",
-            "/projects/supply chain/customer with tootipe.webp",
-            "/projects/supply chain/customer.webp",
+            "/projects/supply chain/customersTooltip.webp",
+            "/projects/supply chain/customers.webp",
             "/projects/supply chain/sales.webp",
             "/projects/supply chain/shipping.webp"
         ],
