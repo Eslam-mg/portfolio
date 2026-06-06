@@ -39,4 +39,25 @@ export const myProjects = [
             "/projects/supply chain/shipping.webp"
         ],
     },
+    {
+        id: 3,
+        type:"front-end",
+        title: "Masihe",
+        shortDescription: "Advertisement platform that allows users to publish, browse, and manage ads through an intuitive and responsive interface.",
+        fullDescription: "Masihe is a responsive advertisement platform developed with React, designed to connect users through a seamless ad publishing and browsing experience. The platform includes user authentication, profile management, category-based ad organization, and detailed advertisement pages. Users can explore listings, view advertiser profiles, and navigate content efficiently through a clean and user-friendly interface. The project focuses on reusable components, responsive design, performance optimization, and modern front-end development best practices",
+        technologies: ["React", "JavaScript", "React-Cookie", "Formik", "Yup"],
+        githubUrl: "https://github.com/Eslam-mg/Romoz_Tec",
+        liveUrl: "",
+        mainImage: "/projects/masihe/main_img.webp",
+        videoUrl: "/projects/masihe/video.mp4",
+        images: [
+            "/projects/masihe/main_img.webp",
+            "/projects/masihe/detailes-ad.webp",
+            "/projects/masihe/login.webp",
+            "/projects/masihe/register.webp",
+            "/projects/masihe/ShowAnyUser.webp",
+            "/projects/masihe/SpecificCategory.webp",
+            "/projects/masihe/UserProfile.webp",
+        ],
+    },
 ];
