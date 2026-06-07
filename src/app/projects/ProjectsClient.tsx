@@ -48,6 +48,38 @@ export default function ProjectsClient() {
 
                         <AngleDownIcon width={16} height={16} className='mt-0.5' />
                     </button>
+
+                    {/* Dropdown Menu */}
+                    {isOpen && (
+                        <ul
+                            role="listbox"
+                            aria-label="Filter projects by type"
+                            className="w-40 absolute top-full mt-1 border border-borderColor bg-backgroundColor z-50 shadow-[0_8px_24px_rgba(0,0,0,0.4)] overflow-hidden"
+                        >
+                            {filterOptions.map(({ key, label }) => {
+                                const isActive = activeFilter === key;
+                                return (
+                                    <li
+                                        key={key}
+                                        role="option"
+                                        aria-selected={isActive}
+                                        onClick={() => {
+                                            setActiveFilter(key);
+                                            setIsOpen(false);
+                                        }}
+                                        className={[
+                                            'flex items-center gap-2 px-4 py-2 text-xs cursor-pointer transition-colors duration-150',
+                                            isActive
+                                                ? 'text-white bg-primaryColor/10 border-l-2 border-primaryColor'
+                                                : 'text-textPrimaryColor hover:bg-white/5 hover:text-white border-l-2 border-transparent',
+                                        ].join(' ')}
+                                    >
+                                        {label}
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                    )}
                 </div>
             </div>
         </div>
