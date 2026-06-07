@@ -3,6 +3,8 @@
 import useOutsideClick from '@/src/hook/useOutsideClick';
 import React, { useState, useRef } from 'react';
 import { myProjects } from './Projects_List';
+import SectionHeader from '@/src/components/SectionHeader/SectionHeader';
+import { AngleDownIcon } from '@/src/components/UI/Icon/Icon';
 // Available project categories for filtering
 type FilterType = 'all' | 'front-end' | 'data analysis';
 
@@ -32,6 +34,22 @@ export default function ProjectsClient() {
             ? myProjects
             : myProjects.filter((p) => p.type === activeFilter);
     return (
-        <div>ProjectsClient</div>
+        <div className="text-textPrimaryColor font-mono px-6 md:px-12 pt-6 md:pt-12 space-y-6">
+            <div className="flex flex-row items-center justify-between">
+                <SectionHeader title="Projects" subtitle="List of my projects" />
+                <div ref={dropdownRef} className="relative w-48">
+                    <button type="button" aria-haspopup="listbox" className="w-40 flex items-center justify-between gap-2 px-4 py-2 text-xs border border-borderColor text-textPrimaryColor hover:border-white/40 hover:text-white transition-all duration-200 cursor-pointer bg-transparent"
+                        aria-expanded={isOpen}
+                        onClick={() => setIsOpen((prev) => !prev)}
+                    >
+                        <span className="flex items-center gap-2">
+                            {activeLabel}
+                        </span>
+
+                        <AngleDownIcon width={16} height={16} className='mt-0.5' />
+                    </button>
+                </div>
+            </div>
+        </div>
     )
 };

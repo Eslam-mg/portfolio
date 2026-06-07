@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import SectionHeader from '@/src/components/SectionHeader/SectionHeader';
 import { myProjects } from './Projects_List';
 import ProjectCard from '@/src/components/ProjectCard/ProjectCard';
+import ProjectsClient from './ProjectsClient';
 export const metadata: Metadata = {
     title: "projects | Eslam",
     description:
@@ -12,7 +13,8 @@ export const metadata: Metadata = {
 export default function page() {
 
     return (
-        <div className="font-mono text-gray-text px-6 md:px-12 pt-6 md:pt-12 overflow-hidden space-y-6">
+        <div className="text-textPrimaryColor font-mono px-6 md:px-12 pt-6 md:pt-12 overflow-hidden space-y-6">
+            <ProjectsClient/>
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                 <SectionHeader title="Projects" subtitle="List of my projects" />
             </div>
