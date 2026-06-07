@@ -2,6 +2,7 @@
 
 import useOutsideClick from '@/src/hook/useOutsideClick';
 import React, { useState, useRef } from 'react';
+import { myProjects } from './Projects_List';
 // Available project categories for filtering
 type FilterType = 'all' | 'front-end' | 'data analysis';
 
@@ -25,6 +26,11 @@ export default function ProjectsClient() {
 
     // Get the label of the active filter for displa
     const activeLabel = filterOptions.find((o) => o.key === activeFilter)?.label ?? 'All';
+    // Filter projects based on the selected category
+    const filteredProjects =
+        activeFilter === 'all'
+            ? myProjects
+            : myProjects.filter((p) => p.type === activeFilter);
     return (
         <div>ProjectsClient</div>
     )
