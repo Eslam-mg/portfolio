@@ -38,8 +38,8 @@ export default function ProjectsClient() {
         <div className="text-textPrimaryColor font-mono px-6 md:px-12 pt-6 md:pt-12 space-y-6">
             <div className="flex flex-row items-center justify-between">
                 <SectionHeader title="Projects" subtitle="List of my projects" />
-                <div ref={dropdownRef} className="relative w-48">
-                    <button type="button" aria-haspopup="listbox" className="w-40 flex items-center justify-between gap-2 px-4 py-2 text-xs border border-borderColor text-textPrimaryColor hover:border-white/40 hover:text-white transition-all duration-200 cursor-pointer bg-transparent"
+                <div ref={dropdownRef} className="relative w-36">
+                    <button type="button" aria-haspopup="listbox" className="w-full flex items-center justify-between p-2 text-xs border border-borderColor text-textPrimaryColor hover:border-white/40 hover:text-white transition-all duration-200 cursor-pointer bg-transparent"
                         aria-expanded={isOpen}
                         onClick={() => setIsOpen((prev) => !prev)}
                     >
@@ -55,7 +55,7 @@ export default function ProjectsClient() {
                         <ul
                             role="listbox"
                             aria-label="Filter projects by type"
-                            className="w-40 absolute top-full mt-1 border border-borderColor bg-backgroundColor z-50 shadow-[0_8px_24px_rgba(0,0,0,0.4)] overflow-hidden"
+                            className="w-36 absolute top-full mt-1 border border-borderColor bg-backgroundColor z-50 shadow-[0_8px_24px_rgba(0,0,0,0.4)] overflow-hidden"
                         >
                             {filterOptions.map(({ key, label }) => {
                                 const isActive = activeFilter === key;
@@ -69,7 +69,7 @@ export default function ProjectsClient() {
                                             setIsOpen(false);
                                         }}
                                         className={[
-                                            'flex items-center gap-2 px-4 py-2 text-xs cursor-pointer transition-colors duration-150',
+                                            'flex items-center gap-2 p-2 text-xs cursor-pointer transition-colors duration-150',
                                             isActive
                                                 ? 'text-white bg-primaryColor/10 border-l-2 border-primaryColor'
                                                 : 'text-textPrimaryColor hover:bg-white/5 hover:text-white border-l-2 border-transparent',
