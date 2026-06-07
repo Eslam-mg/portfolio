@@ -1,4 +1,6 @@
-import React from 'react'
+"use client";
+
+import React, { useState, useRef } from 'react';
 import type { Metadata } from "next";
 import SectionHeader from '@/src/components/SectionHeader/SectionHeader';
 import { myProjects } from './Projects_List';
@@ -18,6 +20,9 @@ const filterOptions: { key: FilterType; label: string }[] = [
 ];
 
 export default function page() {
+    const [activeFilter, setActiveFilter] = useState<FilterType>('all');
+    const [isOpen, setIsOpen] = useState(false);
+    const dropdownRef = useRef<HTMLDivElement>(null);
     return (
         <div className="font-mono text-gray-text px-6 md:px-12 pt-6 md:pt-12 overflow-hidden space-y-6">
             <SectionHeader title="Projects" subtitle="List of my projects" />
