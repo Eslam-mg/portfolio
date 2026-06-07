@@ -1,5 +1,6 @@
 "use client";
 
+import useOutsideClick from '@/src/hook/useOutsideClick';
 import React, { useState, useRef } from 'react';
 // Available project categories for filtering
 type FilterType = 'all' | 'front-end' | 'data analysis';
@@ -18,6 +19,12 @@ export default function ProjectsClient() {
     const [isOpen, setIsOpen] = useState(false);
     // Reference to the dropdown container
     const dropdownRef = useRef<HTMLDivElement>(null);
+
+    // Close the dropdown automatically when the user clicks outside
+    useOutsideClick(dropdownRef, isOpen, () => setIsOpen(false));
+
+    // Get the label of the active filter for displa
+    const activeLabel = filterOptions.find((o) => o.key === activeFilter)?.label ?? 'All';
     return (
         <div>ProjectsClient</div>
     )
