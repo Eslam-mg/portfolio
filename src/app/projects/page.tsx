@@ -1,6 +1,4 @@
-"use client";
-
-import React, { useState, useRef } from 'react';
+import React from 'react'
 import type { Metadata } from "next";
 import SectionHeader from '@/src/components/SectionHeader/SectionHeader';
 import { myProjects } from './Projects_List';
@@ -11,18 +9,8 @@ export const metadata: Metadata = {
         "Explore Eslam's projects in Front-End Development and Data Analysis, featuring React, Next.js, TypeScript, Power BI, SQL, and Excel solutions for building modern applications and extracting valuable insights from data.",
 };
 
-type FilterType = 'all' | 'front-end' | 'data analysis';
-
-const filterOptions: { key: FilterType; label: string }[] = [
-    { key: 'all', label: 'All' },
-    { key: 'front-end', label: 'Front-End' },
-    { key: 'data analysis', label: 'Data Analysis' },
-];
-
 export default function page() {
-    const [activeFilter, setActiveFilter] = useState<FilterType>('all');
-    const [isOpen, setIsOpen] = useState(false);
-    const dropdownRef = useRef<HTMLDivElement>(null);
+
     return (
         <div className="font-mono text-gray-text px-6 md:px-12 pt-6 md:pt-12 overflow-hidden space-y-6">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
