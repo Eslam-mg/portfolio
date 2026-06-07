@@ -25,7 +25,9 @@ export default function page() {
     const dropdownRef = useRef<HTMLDivElement>(null);
     return (
         <div className="font-mono text-gray-text px-6 md:px-12 pt-6 md:pt-12 overflow-hidden space-y-6">
-            <SectionHeader title="Projects" subtitle="List of my projects" />
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                <SectionHeader title="Projects" subtitle="List of my projects" />
+            </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {myProjects.map(project =>
