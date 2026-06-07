@@ -5,6 +5,7 @@ import React, { useState, useRef } from 'react';
 import { myProjects } from './Projects_List';
 import SectionHeader from '@/src/components/SectionHeader/SectionHeader';
 import { AngleDownIcon } from '@/src/components/UI/Icon/Icon';
+import ProjectCard from '@/src/components/ProjectCard/ProjectCard';
 // Available project categories for filtering
 type FilterType = 'all' | 'front-end' | 'data analysis';
 
@@ -81,6 +82,20 @@ export default function ProjectsClient() {
                         </ul>
                     )}
                 </div>
+            </div>
+
+            {/* Projects Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {filteredProjects.length > 0 ? (
+                    filteredProjects.map((project) => (
+                        <ProjectCard key={project.id} {...project} />
+                    ))
+                ) : (
+                    <div className="col-span-full flex flex-col items-center justify-center py-20 text-textPrimaryColor gap-3">
+                        <span className="text-primaryColor text-3xl">{'{ }'}</span>
+                        <p className="text-sm">No projects found for this category.</p>
+                    </div>
+                )}
             </div>
         </div>
     )
