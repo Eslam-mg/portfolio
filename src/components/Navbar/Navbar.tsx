@@ -17,7 +17,7 @@ export default function Navbar() {
     // Controls the visibility of the mobile/navigation menu
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <header className='border-b border-white/10 font-mono"'>
+        <header className="border-b border-borderColor">
             <nav className="max-w-300 h-16 mx-auto px-6 flex items-center justify-between relative">
                 {/* Logo */}
                 <Link href="/" className='flex items-center justify-center gap-2'>

@@ -35,7 +35,7 @@ export default function ProjectsClient() {
             ? myProjects
             : myProjects.filter((p) => p.type === activeFilter);
     return (
-        <div className="text-textPrimaryColor font-mono px-6 md:px-12 pt-6 md:pt-12 space-y-6">
+        <div className="text-textPrimaryColor px-6 sm:px-7 pt-6 md:pt-12 space-y-6">
             <div className="flex flex-row items-center justify-between">
                 <SectionHeader title="Projects" subtitle="List of my projects" />
                 <div ref={dropdownRef} className="relative w-36">
