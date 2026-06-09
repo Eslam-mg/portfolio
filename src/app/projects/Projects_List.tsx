@@ -60,4 +60,20 @@ export const myProjects = [
             "/projects/masihe/UserProfile.webp",
         ],
     },
+    {
+        id: 4,
+        type:"data analysis",
+        title: "Customer Booking",
+        shortDescription: "Interactive dashboard that analyzes airline customer booking data, providing insights into booking behavior, flight preferences.",
+        fullDescription: "Customer Booking is a data analysis project built in Excel to explore and visualize airline booking data through an interactive dashboard. The project focuses on transforming raw booking data into meaningful insights using data cleaning, pivot tables, charts, and KPI tracking. Users can analyze booking trends, customer preferences, route performance, and overall business metrics through a clear and easy-to-navigate dashboard. The project demonstrates practical data analysis skills, data visualization techniques, and the ability to support data-driven decision-making using Microsoft Excel.",
+        technologies: ["Excel"],
+        githubUrl: "https://github.com/Eslam-mg/Airline-Booking-Data-Analysis-Dashboard-Excel-Project",
+        liveUrl: "",
+        mainImage: "/projects/customer_booking/main_img.webp",
+        videoUrl: "/projects/customer_booking/video.mp4",
+        images: [
+            "/projects/customer_booking/main_img.webp",
+            "/projects/customer_booking/map.webp",
+        ],
+    },
 ];
