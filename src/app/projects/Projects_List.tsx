@@ -76,4 +76,23 @@ export const myProjects = [
             "/projects/customer_booking/map.webp",
         ],
     },
+    {
+        id: 5,
+        type:"front-end",
+        title: "Suadi Made",
+        shortDescription: "Modern platform showcasing Saudi-made products with a responsive design, authentication system, and seamless user experience.",
+        fullDescription: "Saudi Made is a modern e-commerce web application developed to promote and showcase locally manufactured Saudi products. The platform provides users with a smooth browsing experience through a responsive and intuitive interface, allowing them to explore products, manage their accounts, and interact with the platform efficiently. The project includes user authentication, profile management, product browsing, and optimized navigation. Built with modern front-end technologies, the application emphasizes clean architecture, reusable components, performance optimization, and mobile-friendly design principles.",
+        technologies: ["React", "Vite", "TypeScript", "Tailwind Css", ""],
+        githubUrl: "https://github.com/Eslam-mg/suadi-made",
+        liveUrl: "https://suadi-made.vercel.app/",
+        mainImage: "/projects/suadi-made/main_img.webp",
+        videoUrl: "",
+        images: [
+            "/projects/suadi-made/main_img.webp",
+            "/projects/suadi-made/company.webp",
+            "/projects/suadi-made/home.webp",
+            "/projects/suadi-made/login.webp",
+            "/projects/suadi-made/user.webp",
+        ],
+    },
 ];
