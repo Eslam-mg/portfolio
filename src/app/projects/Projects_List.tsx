@@ -86,7 +86,7 @@ export const myProjects = [
         githubUrl: "https://github.com/Eslam-mg/suadi-made",
         liveUrl: "https://suadi-made.vercel.app/",
         mainImage: "/projects/suadi-made/main_img.webp",
-        videoUrl: "",
+        videoUrl: "/projects/suadi-made/video.mp4",
         images: [
             "/projects/suadi-made/main_img.webp",
             "/projects/suadi-made/company.webp",
