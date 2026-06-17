@@ -26,7 +26,7 @@ export default function Navbar() {
                 </Link>
 
                 {/* responsive nav */}
-                <ul className={`flex flex-col sm:flex-row gap-8 m-0 p-0 absolute sm:static top-full ${isOpen ? "h-96" : "h-0"} sm:h-fit overflow-hidden custom-duration`}>
+                <ul className={`bg-backgroundColor border border-t-0 border-borderColor shadow-[0_8px_24px_rgba(0,0,0,0.4)] sm:border-0 sm:shadow-none sm:w-fit flex flex-col justify-center sm:flex-row gap-8 absolute top-full left-7 right-7 sm:static z-50 ${isOpen ? "h-56" : "h-0"} sm:h-fit px-6 sm:px-0 overflow-hidden custom-duration`}>
                     {navLinks.map((link) => (
                         <li key={link.href}>
                             <Link
