@@ -26,11 +26,12 @@ export default function Navbar() {
                 </Link>
 
                 {/* responsive nav */}
-                <ul className={`bg-backgroundColor border border-t-0 border-borderColor shadow-[0_8px_24px_rgba(0,0,0,0.4)] sm:border-0 sm:shadow-none sm:w-fit flex flex-col justify-center sm:flex-row gap-8 absolute top-full left-7 right-7 sm:static z-50 ${isOpen ? "h-56" : "h-0"} sm:h-fit px-6 sm:px-0 overflow-hidden custom-duration`}>
+                <ul className={`bg-backgroundColor border border-t-0 border-borderColor shadow-[0_8px_24px_rgba(0,0,0,0.4)] sm:border-0 sm:shadow-none sm:w-fit flex flex-col justify-center sm:flex-row gap-8 absolute top-full left-7 right-7 sm:static z-50 ${isOpen ? "h-56 rounded-b-lg" : "h-0"} sm:h-fit px-6 sm:px-0 overflow-hidden custom-duration`}>
                     {navLinks.map((link) => (
                         <li key={link.href}>
                             <Link
                                 href={link.href}
+                                onClick={() => setIsOpen(false)}
                                 className={`text-sm transition-colors flex items-center gap-0.5 ${pathname === link.href ? "text-white" : "text-textPrimaryColor"}`}
                             >
                                 <span className="text-primaryColor">#</span>
@@ -40,7 +41,7 @@ export default function Navbar() {
                     ))}
                 </ul>
 
-                <div className=" flex items-center justify-center gap-4">
+                <div className="flex items-center justify-center gap-4">
                     <LanguageButton />
                     <button type='button' onClick={() => setIsOpen(!isOpen)} aria-label='Button to open mobile menu' className="flex flex-col items-end justify-center gap-1.5 sm:hidden cursor-pointer">
                         <span className={`bg-textPrimaryColor h-0.5 w-6 ${isOpen ? "translate-y-1 translate-x-0 -rotate-45" : ""} custom-duration`} />
