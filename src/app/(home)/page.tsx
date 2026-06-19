@@ -233,7 +233,7 @@ export default function page() {
                             <p className="text-white m-0 mb-1 font-semibold">Eslam</p>
                             <p className="text-textPrimaryColor m-0 text-xs">Frontend Developer & Data Analyst</p>
                         </div>
-                        <div className="w-full border-t border-borderColor pt-4 flex flex-col gap-2">
+                        <div className="w-full border-t border-borderColor pt-4 flex flex-row justify-between gap-2">
                             {["Friendly", "Ambitious", "Immovable", "Focused"].map((trait) => (
                                 <div key={trait} className="flex items-center gap-2 text-xs">
                                     <span className="text-primaryColor">✓</span>
