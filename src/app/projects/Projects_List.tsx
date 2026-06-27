@@ -95,4 +95,23 @@ export const myProjects = [
             "/projects/suadi-made/user.webp",
         ],
     },
+    {
+        id: 6,
+        type:"front-end",
+        title: "Recipe",
+        shortDescription: "Responsive web allows users to explore meals from different countries, view detailed recipes, ingredients and cooking instructions.",
+        fullDescription: "Recipe is a modern web application that allows users to explore a wide variety of meals from different countries through a clean and responsive interface. Users can browse meals by country, view detailed information about each meal, including ingredients, preparation instructions, and images. The application integrates with an external API to fetch real-time recipe data and provides smooth navigation with a mobile-friendly design. Built with React, Axios, JavaScript, Sass, and AOS, the project focuses on reusable components, API integration, responsive layouts, and delivering an intuitive user experience.",
+        technologies: ["React", "Axios", "JavaScript", "Sass", "Aos"],
+        githubUrl: "https://github.com/Eslam-mg/Recipe_Route",
+        liveUrl: "https://recipe-pi-seven.vercel.app/",
+        mainImage: "/projects/recipe/main_img.webp",
+        videoUrl: "/projects/recipe/video.mp4",
+        images: [
+            "/projects/recipe/main_img.webp",
+            "/projects/recipe/company.webp",
+            "/projects/recipe/home.webp",
+            "/projects/recipe/login.webp",
+            "/projects/recipe/user.webp",
+        ],
+    },
 ];
