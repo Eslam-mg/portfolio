@@ -2,7 +2,9 @@
 
 import React, { useState, useRef } from 'react';
 import Image from "next/image";
+import Link from 'next/link';
 interface ProjectCardProps {
+    id: number;
     title: string;
     shortDescription: string;
     technologies: string[];
@@ -13,6 +15,7 @@ interface ProjectCardProps {
 };
 
 export default function ProjectCard({
+    id,
     title,
     shortDescription,
     technologies,
@@ -109,11 +112,17 @@ export default function ProjectCard({
 
                 {/* Buttons */}
                 <div className="flex gap-3">
+                    <Link
+                        href={`/projects/${id}`}
+                        className="flex items-center gap-1.5 border border-primaryColor text-white text-sm px-3.5 py-1.5 transition-colors hover:bg-primaryColor/20"
+                    >
+                        Details <span className="text-primaryColor text-xs">→</span>
+                    </Link>
                     <a
                         href={githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-1.5 border border-primaryColor text-white text-sm px-3.5 py-1.5 transition-colors hover:bg-primaryColor/20"
+                        className="flex items-center gap-1.5 border border-borderColor text-textPrimaryColor text-sm px-3.5 py-1.5 transition-colors hover:bg-borderColor/20"
                     >
                         GitHub <span className="text-primary text-xs">&lt;~&gt;</span>
                     </a>
