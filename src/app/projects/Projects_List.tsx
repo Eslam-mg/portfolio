@@ -1,3 +1,17 @@
+export type ProjectType = {
+    id: number;
+    type: string;
+    title: string;
+    shortDescription: string;
+    fullDescription: string;
+    technologies: string[];
+    githubUrl: string;
+    liveUrl: string;
+    mainImage: string;
+    videoUrl: string;
+    images: string[];
+};
+
 export const myProjects = [
     {
         id: 1,

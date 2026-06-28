@@ -3,16 +3,7 @@
 import React, { useState, useRef } from 'react';
 import Image from "next/image";
 import Link from 'next/link';
-interface ProjectCardProps {
-    id: number;
-    title: string;
-    shortDescription: string;
-    technologies: string[];
-    liveUrl?: string;
-    githubUrl?: string;
-    mainImage?: string;
-    videoUrl?: string;
-};
+import { ProjectType } from '@/src/app/projects/Projects_List';
 
 export default function ProjectCard({
     id,
@@ -23,7 +14,7 @@ export default function ProjectCard({
     githubUrl = "#",
     mainImage,
     videoUrl,
-}: ProjectCardProps) {
+}: ProjectType) {
     const [isHovered, setIsHovered] = useState(false);
     const [isVideoLoading, setIsVideoLoading] = useState(false);
     const videoRef = useRef<HTMLVideoElement>(null);
