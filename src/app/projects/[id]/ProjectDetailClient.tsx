@@ -37,6 +37,26 @@ export default function ProjectDetailClient({ project }: { project: ProjectType 
                 </h1>
                 <p className="text-textPrimaryColor text-sm mt-2 m-0">{project.shortDescription}</p>
             </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                {/* Thumbnail strip */}
+                <div className="lg:col-span-2 space-y-3">
+                    <div className="relative w-full aspect-video border border-borderColor bg-backgroundColor overflow-hidden group">
+                        <Image
+                            src={project.images[activeImage]}
+                            alt={`${project.title} screenshot ${activeImage + 1}`}
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 1024px) 100vw, 66vw"
+                            priority
+                        />
+                        {/* image counter */}
+                        <span className="absolute bottom-3 right-3 bg-backgroundColor/80 border border-borderColor text-textPrimaryColor text-xs px-2 py-0.5 pointer-events-none">
+                            {activeImage + 1} / {project.images.length}
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
