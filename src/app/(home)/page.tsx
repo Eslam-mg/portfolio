@@ -5,32 +5,7 @@ import type { Metadata } from "next";
 import { AngleDownIcon, GripBoxIcon, LogoIcon, OpeningQuoteIcon, SquareIcon } from '@/src/components/UI/Icon/Icon';
 import SectionHeader from '@/src/components/SectionHeader/SectionHeader';
 import ProjectCard from '@/src/components/ProjectCard/ProjectCard';
-const featuredProjects = [
-    {
-        title: "FakeStore App",
-        description:
-            "A full-featured e-commerce front-end with cart, authentication, and product filtering. Built with Next.js and Tailwind CSS.",
-        technologies: ["Next.js", "TypeScript", "Tailwind"],
-        liveUrl: "#",
-        githubUrl: "#",
-    },
-    {
-        title: "Portfolio V1",
-        description:
-            "Personal portfolio site built with React showcasing projects and skills. Fully responsive and animated.",
-        technologies: ["React", "CSS"],
-        liveUrl: "#",
-        githubUrl: "#",
-    },
-    {
-        title: "Weather Dashboard",
-        description:
-            "Real-time weather app using OpenWeather API with animated weather icons and geolocation support.",
-        technologies: ["JavaScript", "API"],
-        liveUrl: "#",
-        githubUrl: "#",
-    },
-];
+import { myProjects } from '../projects/Projects_List';
 
 export const metadata: Metadata = {
     title: "Eslam Mohamed | Portfolio",
@@ -39,6 +14,7 @@ export const metadata: Metadata = {
 };
 
 export default function page() {
+    const featuredProjects = myProjects.slice(0, 3);
     return (
         <div className="font-mono text-gray-text px-6 md:px-12 pt-6 md:pt-12 overflow-hidden space-y-24">
             {/* ── HERO ── */}
