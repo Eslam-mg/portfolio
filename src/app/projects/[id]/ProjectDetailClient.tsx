@@ -78,6 +78,23 @@ export default function ProjectDetailClient({ project }: { project: ProjectType 
                             </>
                         )}
                     </div>
+
+                    {/* Thumbnail images */}
+                    <div className="flex items-center gap-2 overflow-x-auto pb-1">
+                        {project.images.map((img, i) => (
+                            <button
+                                key={i}
+                                aria-label={`View screenshot ${i + 1}`}
+                                onClick={() => setActiveImage(i)}
+                                className={`relative shrink-0 w-24 h-16 border transition-colors duration-150 overflow-hidden cursor-pointer ${activeImage === i
+                                    ? 'border-primaryColor'
+                                    : 'border-borderColor hover:border-white/40'
+                                    }`}
+                            >
+                                <Image src={img} alt={`thumbnail ${i + 1}`} fill className="object-cover" sizes="64px" />
+                            </button>
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>
