@@ -54,6 +54,29 @@ export default function ProjectDetailClient({ project }: { project: ProjectType 
                         <span className="absolute bottom-3 right-3 bg-backgroundColor/80 border border-borderColor text-textPrimaryColor text-xs px-2 py-0.5 pointer-events-none">
                             {activeImage + 1} / {project.images.length}
                         </span>
+                        {/* Prev / Next arrows */}
+                        {project.images.length > 1 && (
+                            <>
+                                <button
+                                    aria-label="Previous image"
+                                    onClick={() => setActiveImage((i) => (i - 1 + project.images.length) % project.images.length)}
+                                    className="absolute left-2 top-1/2 -translate-y-1/2 bg-backgroundColor/70 border border-borderColor text-white p-1.5 opacity-0 group-hover:opacity-100 transition-opacity hover:border-white/50 cursor-pointer"
+                                >
+                                    <svg width={14} height={14} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                        <path d="M15 18l-6-6 6-6" />
+                                    </svg>
+                                </button>
+                                <button
+                                    aria-label="Next image"
+                                    onClick={() => setActiveImage((i) => (i + 1) % project.images.length)}
+                                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-backgroundColor/70 border border-borderColor text-white p-1.5 opacity-0 group-hover:opacity-100 transition-opacity hover:border-white/50 cursor-pointer"
+                                >
+                                    <svg width={14} height={14} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                        <path d="M9 18l6-6-6-6" />
+                                    </svg>
+                                </button>
+                            </>
+                        )}
                     </div>
                 </div>
             </div>
