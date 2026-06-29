@@ -122,10 +122,11 @@ export const myProjects = [
         videoUrl: "/projects/recipe/video.mp4",
         images: [
             "/projects/recipe/main_img.webp",
-            "/projects/recipe/company.webp",
+            "/projects/recipe/meals.webp",
             "/projects/recipe/home.webp",
-            "/projects/recipe/login.webp",
-            "/projects/recipe/user.webp",
+            "/projects/recipe/details.webp",
+            "/projects/recipe/ingredients.webp",
+            "/projects/recipe/area.webp",
         ],
     },
 ];
