@@ -170,6 +170,14 @@ export default function ProjectDetailClient({ project }: { project: ProjectType 
                     </div>
                 </div>
             </div>
+
+            {/* Full description */}
+            <div className="border border-borderColor p-5 space-y-2">
+                <h2 className="text-white text-sm font-semibold font-mono m-0">
+                    <span className="text-primaryColor">// </span>description
+                </h2>
+                <p className="text-textPrimaryColor text-sm leading-relaxed m-0">{project.fullDescription}</p>
+            </div>
         </div>
     )
 }
