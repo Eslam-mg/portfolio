@@ -97,8 +97,27 @@ export default function ProjectDetailClient({ project }: { project: ProjectType 
                     </div>
                 </div>
 
-                {/* Sidebar */}
+                {/* Sidebar: video */}
                 <div className="space-y-6">
+                    {/* Video */}
+                    {project.videoUrl && (
+                        <div className="border border-borderColor overflow-hidden">
+                            <div className="px-4 py-2 border-b border-borderColor">
+                                <h2 className="text-white text-sm font-semibold font-mono m-0">
+                                    <span className="text-primaryColor">// </span>demo-video
+                                </h2>
+                            </div>
+                            <video
+                                src={project.videoUrl}
+                                autoPlay
+                                muted
+                                loop
+                                playsInline
+                                controls
+                                className="w-full block"
+                            />
+                        </div>
+                    )}
                 </div>
             </div>
         </div>
