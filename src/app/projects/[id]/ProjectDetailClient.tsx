@@ -96,6 +96,10 @@ export default function ProjectDetailClient({ project }: { project: ProjectType 
                         ))}
                     </div>
                 </div>
+
+                {/* Sidebar */}
+                <div className="space-y-6">
+                </div>
             </div>
         </div>
     )
