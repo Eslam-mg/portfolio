@@ -97,7 +97,7 @@ export default function ProjectDetailClient({ project }: { project: ProjectType 
                     </div>
                 </div>
 
-                {/* Sidebar: video */}
+                {/* Sidebar: video + tech stack */}
                 <div className="space-y-6">
                     {/* Video */}
                     {project.videoUrl && (
@@ -118,6 +118,23 @@ export default function ProjectDetailClient({ project }: { project: ProjectType 
                             />
                         </div>
                     )}
+
+                    {/* Tech stack */}
+                    <div className="border border-borderColor p-4 space-y-3">
+                        <h2 className="text-white text-sm font-semibold font-mono m-0">
+                            <span className="text-primaryColor">// </span>tech-stack
+                        </h2>
+                        <div className="flex flex-wrap gap-2">
+                            {project.technologies.filter(Boolean).map((tech) => (
+                                <span
+                                    key={tech}
+                                    className="text-xs border border-primaryColor/40 text-primaryColor px-2 py-0.5"
+                                >
+                                    {tech}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
